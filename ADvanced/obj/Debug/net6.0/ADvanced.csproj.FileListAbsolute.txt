@@ -1,0 +1,6 @@
+D:\Something\гадости\это гадость\Project\Backend\ADvanced\obj\Debug\net6.0\ADvanced.csproj.AssemblyReference.cache
+D:\Something\гадости\это гадость\Project\Backend\ADvanced\obj\Debug\net6.0\ADvanced.GeneratedMSBuildEditorConfig.editorconfig
+D:\Something\гадости\это гадость\Project\Backend\ADvanced\obj\Debug\net6.0\ADvanced.AssemblyInfoInputs.cache
+D:\Something\гадости\это гадость\Project\Backend\ADvanced\obj\Debug\net6.0\ADvanced.AssemblyInfo.cs
+D:\Something\гадости\это гадость\Project\Backend\ADvanced\obj\Debug\net6.0\ADvanced.csproj.CoreCompileInputs.cache
+D:\Something\гадости\это гадость\Project\Backend\ADvanced\obj\Debug\net6.0\ADvanced.MvcApplicationPartsAssemblyInfo.cache
