@@ -5,18 +5,12 @@
     <projectFile profileName="IIS Express">ADvanced.csproj</projectFile>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="79b12a13-811b-450a-a4bc-cc9c2553ca19" name="Changes" comment="Models">
-      <change afterPath="$PROJECT_DIR$/Controllers/CategoryController.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Data/Interfaces/IADRepository.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Data/Interfaces/IAdOrderRepository.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Data/Interfaces/IAddressRepository.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Data/Interfaces/IRepository.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Data/Repository/CategoryRepository.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Models/StatusEnum.cs" afterDir="false" />
+    <list default="true" id="79b12a13-811b-450a-a4bc-cc9c2553ca19" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.ADvanced/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.ADvanced/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ADvanced.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/ADvanced.csproj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Data/ApplicationContext.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Data/ApplicationContext.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Models/Ad.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Models/Ad.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Models/AdOrder.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Models/AdOrder.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Models/StatusEnum.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Models/Status.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Program.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -30,6 +24,11 @@
         <option name="argument" value="--tags" />
         <option name="title" value="All" />
       </GitPushTagMode>
+    </option>
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$/.." value="dev" />
+      </map>
     </option>
   </component>
   <component name="HighlightingSettingsPerFile">
@@ -99,7 +98,8 @@
       <workItem from="1689092598783" duration="881000" />
       <workItem from="1689095852916" duration="2670000" />
       <workItem from="1689152270414" duration="432000" />
-      <workItem from="1689152954514" duration="5251000" />
+      <workItem from="1689152954514" duration="6014000" />
+      <workItem from="1689175981675" duration="1656000" />
     </task>
     <task id="LOCAL-00001" summary="Init">
       <created>1689072940825</created>
@@ -122,7 +122,14 @@
       <option name="project" value="LOCAL" />
       <updated>1689153008361</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="CRUD Ex">
+      <created>1689166891260</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1689166891260</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -145,6 +152,7 @@
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
     <MESSAGE value="Init" />
     <MESSAGE value="Models" />
-    <option name="LAST_COMMIT_MESSAGE" value="Models" />
+    <MESSAGE value="CRUD Ex" />
+    <option name="LAST_COMMIT_MESSAGE" value="CRUD Ex" />
   </component>
 </project>

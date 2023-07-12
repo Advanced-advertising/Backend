@@ -8,7 +8,7 @@ public class AdOrder
     public decimal Price { get; set; }
     public string StartTime { get; set; }
     public string EndTime { get; set; }
-    public bool IsRejected { get; set; }
+    public Status Status { get; set; } // 
     public Income Income { get; set; }
     public Payment Payment { get; set; }
 }

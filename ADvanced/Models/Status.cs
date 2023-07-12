@@ -1,6 +1,6 @@
 namespace ADvanced.Models;
 
-public enum StatusEnum
+public enum Status
 {
     
 }
