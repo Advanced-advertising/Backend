@@ -5,13 +5,9 @@
     <projectFile profileName="IIS Express">ADvanced.csproj</projectFile>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="79b12a13-811b-450a-a4bc-cc9c2553ca19" name="Changes" comment="">
+    <list default="true" id="79b12a13-811b-450a-a4bc-cc9c2553ca19" name="Changes" comment="CategoryDto">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.ADvanced/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.ADvanced/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ADvanced.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/ADvanced.csproj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Models/Ad.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Models/Ad.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Models/AdOrder.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Models/AdOrder.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Models/StatusEnum.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Models/Status.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Program.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Controllers/CategoryController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Controllers/CategoryController.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -32,6 +28,7 @@
     </option>
   </component>
   <component name="HighlightingSettingsPerFile">
+    <setting file="mock://D:/Something/гадости/это гадость/ADvanced/ADvanced/Models/Ad.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/obj/Debug/net6.0/.NETCoreApp,Version=v6.0.AssemblyAttributes.cs" root0="SKIP_HIGHLIGHTING" />
   </component>
   <component name="MarkdownSettingsMigration">
@@ -99,7 +96,7 @@
       <workItem from="1689095852916" duration="2670000" />
       <workItem from="1689152270414" duration="432000" />
       <workItem from="1689152954514" duration="6014000" />
-      <workItem from="1689175981675" duration="1656000" />
+      <workItem from="1689175981675" duration="2327000" />
     </task>
     <task id="LOCAL-00001" summary="Init">
       <created>1689072940825</created>
@@ -129,7 +126,14 @@
       <option name="project" value="LOCAL" />
       <updated>1689166891260</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="CategoryDto">
+      <created>1689182343409</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1689182343409</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -153,6 +157,7 @@
     <MESSAGE value="Init" />
     <MESSAGE value="Models" />
     <MESSAGE value="CRUD Ex" />
-    <option name="LAST_COMMIT_MESSAGE" value="CRUD Ex" />
+    <MESSAGE value="CategoryDto" />
+    <option name="LAST_COMMIT_MESSAGE" value="CategoryDto" />
   </component>
 </project>
