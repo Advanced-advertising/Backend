@@ -7,11 +7,11 @@ string connection = "Server=(localdb)\\mssqllocaldb;Database=applicationdb;Trust
 builder.Services.AddControllers();
 builder.Services.AddControllers().AddJsonOptions(x =>
     x.JsonSerializerOptions.ReferenceHandler = ReferenceHandler.IgnoreCycles);
-//builder.Services.AddDbContext<ApplicationContext>(options => options.UseSqlServer(connection));
+builder.Services.AddDbContext<ApplicationContext>(options => options.UseSqlServer(connection));
 builder.Services.AddAutoMapper(AppDomain.CurrentDomain.GetAssemblies());
 
 var app = builder.Build();
- 
+
 app.UseDefaultFiles();
 app.UseStaticFiles();
 app.MapControllers();
