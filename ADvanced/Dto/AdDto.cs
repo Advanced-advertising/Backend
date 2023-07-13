@@ -1,6 +1,8 @@
-namespace ADvanced.Models;
+using ADvanced.Models;
 
-public class Ad
+namespace ADvanced.Dto;
+
+public class AdDto
 {
     public int Id { get; set; }
     public User User { get; set; } = new User();

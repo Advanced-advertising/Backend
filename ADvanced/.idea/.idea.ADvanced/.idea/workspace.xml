@@ -5,9 +5,9 @@
     <projectFile profileName="IIS Express">ADvanced.csproj</projectFile>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="79b12a13-811b-450a-a4bc-cc9c2553ca19" name="Changes" comment="CategoryDto">
+    <list default="true" id="79b12a13-811b-450a-a4bc-cc9c2553ca19" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.ADvanced/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.ADvanced/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Controllers/CategoryController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Controllers/CategoryController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Models/Status.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Models/Status.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -28,6 +28,7 @@
     </option>
   </component>
   <component name="HighlightingSettingsPerFile">
+    <setting file="mock://D:/Something/гадости/это гадость/ADvanced/ADvanced/Controllers/CategoryController.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="mock://D:/Something/гадости/это гадость/ADvanced/ADvanced/Models/Ad.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/obj/Debug/net6.0/.NETCoreApp,Version=v6.0.AssemblyAttributes.cs" root0="SKIP_HIGHLIGHTING" />
   </component>
@@ -96,7 +97,7 @@
       <workItem from="1689095852916" duration="2670000" />
       <workItem from="1689152270414" duration="432000" />
       <workItem from="1689152954514" duration="6014000" />
-      <workItem from="1689175981675" duration="2327000" />
+      <workItem from="1689175981675" duration="3858000" />
     </task>
     <task id="LOCAL-00001" summary="Init">
       <created>1689072940825</created>
@@ -133,7 +134,14 @@
       <option name="project" value="LOCAL" />
       <updated>1689182343409</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Category controller">
+      <created>1689183196707</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1689183196707</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -158,6 +166,7 @@
     <MESSAGE value="Models" />
     <MESSAGE value="CRUD Ex" />
     <MESSAGE value="CategoryDto" />
-    <option name="LAST_COMMIT_MESSAGE" value="CategoryDto" />
+    <MESSAGE value="Category controller" />
+    <option name="LAST_COMMIT_MESSAGE" value="Category controller" />
   </component>
 </project>
