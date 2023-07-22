@@ -18,6 +18,18 @@ public class ApplicationContext : DbContext
     
     public ApplicationContext(DbContextOptions<ApplicationContext> options) : base(options)
     {
-        Database.Migrate();
+        //Database.EnsureDeleted();
+        Database.EnsureCreated();
+    }
+    protected override void OnModelCreating(ModelBuilder modelBuilder)
+    {
+        modelBuilder.Entity<Category>().HasData(
+            new Category { Id = 1, Name = "Military"},
+            new Category { Id = 2, Name = "Shadow"},
+            new Category { Id = 3, Name = "Bet"}
+        );
+        modelBuilder.Entity<Income>().HasData(
+            new Income { Id = 1, IncomeCount = 15}
+        );
     }
 }

@@ -22,27 +22,27 @@ public class BusinessRepository : IRepository<Business>
         return _context.Business.Where(c => c.Id == id).FirstOrDefault();
     }
 
-    public bool Create(Business business)
+    public async Task<bool> Create(Business business)
     {
         _context.Business.Add(business);
-        return Save();
+        return await Save();
     }
 
-    public bool Update(Business business)
+    public async Task<bool> Update(Business business)
     {
         _context.Business.Update(business);
-        return Save();
+        return await Save();
     }
 
-    public bool Delete(Business business)
+    public async Task<bool> Delete(Business business)
     {
         _context.Business.Remove(business);
-        return Save();
+        return await Save();
     }
 
-    public bool Save()
+    public async Task<bool> Save()
     {
-        var saved = _context.SaveChanges();
+        var saved = await _context.SaveChangesAsync();
         return saved > 0 ? true : false;
     }
 }

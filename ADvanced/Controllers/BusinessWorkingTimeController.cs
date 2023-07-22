@@ -33,7 +33,7 @@ public class BusinessWorkingTimeController : Controller
     [HttpPost]
     [ProducesResponseType(204)]
     [ProducesResponseType(400)]
-    public IActionResult Create([FromBody] BusinessWorkingTimeDto businessWorkingTimeCreate)
+    public async Task<IActionResult> Create([FromBody] BusinessWorkingTimeDto businessWorkingTimeCreate)
     {
 
         if (!ModelState.IsValid)
@@ -41,7 +41,7 @@ public class BusinessWorkingTimeController : Controller
 
         var businessWorkingTimeMap = _mapper.Map<BusinessWorkingTime>(businessWorkingTimeCreate);
 
-        if (!_businessWorkingTimeRepository.Create(businessWorkingTimeMap))
+        if (!await _businessWorkingTimeRepository.Create(businessWorkingTimeMap))
         {
             ModelState.AddModelError("", "Something went wrong while savin");
             return StatusCode(500, ModelState);
@@ -54,14 +54,14 @@ public class BusinessWorkingTimeController : Controller
     [ProducesResponseType(400)]
     [ProducesResponseType(204)]
     [ProducesResponseType(404)]
-    public IActionResult Update([FromBody] BusinessWorkingTimeDto updatedBusinessWorkingTime)
+    public async Task<IActionResult> Update([FromBody] BusinessWorkingTimeDto updatedBusinessWorkingTime)
     {
         if (!ModelState.IsValid)
             return BadRequest();
 
         var businessWorkingTimeMap = _mapper.Map<BusinessWorkingTime>(updatedBusinessWorkingTime);
 
-        if (!_businessWorkingTimeRepository.Update(businessWorkingTimeMap))
+        if (!await _businessWorkingTimeRepository.Update(businessWorkingTimeMap))
         {
             ModelState.AddModelError("", "Something went wrong updating businessWorkingTime");
             return StatusCode(500, ModelState);
@@ -74,11 +74,11 @@ public class BusinessWorkingTimeController : Controller
     [ProducesResponseType(400)]
     [ProducesResponseType(204)]
     [ProducesResponseType(404)]
-    public IActionResult Delete(int businessWorkingTimesId)
+    public async Task<IActionResult> Delete(int businessWorkingTimesId)
     {
         var businessToDelete = _businessWorkingTimeRepository.GetItem(businessWorkingTimesId);
         
-        if (!_businessWorkingTimeRepository.Delete(businessToDelete))
+        if (!await _businessWorkingTimeRepository.Delete(businessToDelete))
         {
             ModelState.AddModelError("", "Something went wrong deleting business");
         };

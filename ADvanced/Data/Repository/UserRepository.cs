@@ -22,27 +22,27 @@ public class UserRepository : IRepository<User>
         return _context.Users.Where(c => c.Id == id).FirstOrDefault();
     }
 
-    public bool Create(User user)
+    public async Task<bool> Create(User user)
     {
         _context.Users.Add(user);
-        return Save();
+        return await Save();
     }
 
-    public bool Update(User user)
+    public async Task<bool> Update(User user)
     {
         _context.Users.Update(user);
-        return Save();
+        return await Save();
     }
 
-    public bool Delete(User user)
+    public async Task<bool> Delete(User user)
     {
         _context.Users.Remove(user);
-        return Save();
+        return await Save();
     }
 
-    public bool Save()
+    public async Task<bool> Save()
     {
-        var saved = _context.SaveChanges();
+        var saved = await _context.SaveChangesAsync();
         return saved > 0 ? true : false;
     }
 }

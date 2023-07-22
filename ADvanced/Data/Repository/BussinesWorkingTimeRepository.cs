@@ -22,27 +22,26 @@ public class BussinesWorkingTimeRepository : IRepository<BusinessWorkingTime>
         return _context.BusinessWorkingTimes.Where(c => c.Id == id).FirstOrDefault();
     }
 
-    public bool Create(BusinessWorkingTime businessWorkingTime)
+    public async Task<bool> Create(BusinessWorkingTime businessWorkingTime)
     {
         _context.BusinessWorkingTimes.Add(businessWorkingTime);
-        return Save();
+        return await Save();
     }
-
-    public bool Update(BusinessWorkingTime businessWorkingTime)
+    public async Task<bool> Update(BusinessWorkingTime businessWorkingTime)
     {
         _context.BusinessWorkingTimes.Update(businessWorkingTime);
-        return Save();
+        return await Save();
     }
 
-    public bool Delete(BusinessWorkingTime businessWorkingTime)
+    public async Task<bool> Delete(BusinessWorkingTime businessWorkingTime)
     {
         _context.BusinessWorkingTimes.Remove(businessWorkingTime);
-        return Save();
+        return await Save();
     }
 
-    public bool Save()
+    public async Task<bool> Save()
     {
-        var saved = _context.SaveChanges();
+        var saved = await _context.SaveChangesAsync();
         return saved > 0 ? true : false;
     }
 }

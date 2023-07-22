@@ -33,7 +33,7 @@ public class BusinessController : Controller
     [HttpPost]
     [ProducesResponseType(204)]
     [ProducesResponseType(400)]
-    public IActionResult Create([FromBody] BusinessDto businessCreate)
+    public async Task<IActionResult> Create([FromBody] BusinessDto businessCreate)
     {
 
         if (!ModelState.IsValid)
@@ -41,7 +41,7 @@ public class BusinessController : Controller
 
         var businessMap = _mapper.Map<Business>(businessCreate);
 
-        if (!_businessRepository.Create(businessMap))
+        if (!await _businessRepository.Create(businessMap))
         {
             ModelState.AddModelError("", "Something went wrong while savin");
             return StatusCode(500, ModelState);
@@ -54,14 +54,14 @@ public class BusinessController : Controller
     [ProducesResponseType(400)]
     [ProducesResponseType(204)]
     [ProducesResponseType(404)]
-    public IActionResult Update([FromBody] BusinessDto updatedBusiness)
+    public async Task<IActionResult> Update([FromBody] BusinessDto updatedBusiness)
     {
         if (!ModelState.IsValid)
             return BadRequest();
 
         var businessMap = _mapper.Map<Business>(updatedBusiness);
 
-        if (!_businessRepository.Update(businessMap))
+        if (!await _businessRepository.Update(businessMap))
         {
             ModelState.AddModelError("", "Something went wrong updating business");
             return StatusCode(500, ModelState);
@@ -74,11 +74,11 @@ public class BusinessController : Controller
     [ProducesResponseType(400)]
     [ProducesResponseType(204)]
     [ProducesResponseType(404)]
-    public IActionResult Delete(int adOrderId)
+    public async Task<IActionResult> Delete(int adOrderId)
     {
         var businessToDelete = _businessRepository.GetItem(adOrderId);
         
-        if (!_businessRepository.Delete(businessToDelete))
+        if (!await _businessRepository.Delete(businessToDelete))
         {
             ModelState.AddModelError("", "Something went wrong deleting business");
         };

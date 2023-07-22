@@ -22,27 +22,27 @@ public class ScreenRepository : IRepository<Screen>
         return _context.Screens.Where(c => c.Id == id).FirstOrDefault();
     }
 
-    public bool Create(Screen screen)
+    public async Task<bool> Create(Screen screen)
     {
         _context.Screens.Add(screen);
-        return Save();
+        return await Save();
     }
 
-    public bool Update(Screen screen)
+    public async Task<bool> Update(Screen screen)
     {
         _context.Screens.Update(screen);
-        return Save();
+        return await Save();
     }
 
-    public bool Delete(Screen screen)
+    public async Task<bool> Delete(Screen screen)
     {
         _context.Screens.Remove(screen);
-        return Save();
+        return await Save();
     }
 
-    public bool Save()
+    public async Task<bool> Save()
     {
-        var saved = _context.SaveChanges();
+        var saved = await _context.SaveChangesAsync();
         return saved > 0 ? true : false;
     }
 }

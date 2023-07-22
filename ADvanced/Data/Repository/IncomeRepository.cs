@@ -22,27 +22,27 @@ public class IncomeRepository : IRepository<Income>
         return _context.Incomes.Where(c => c.Id == id).FirstOrDefault();
     }
 
-    public bool Create(Income income)
+    public async Task<bool> Create(Income income)
     {
         _context.Incomes.Add(income);
-        return Save();
+        return await Save();
     }
 
-    public bool Update(Income income)
+    public async Task<bool> Update(Income income)
     {
         _context.Incomes.Update(income);
-        return Save();
+        return await Save();
     }
 
-    public bool Delete(Income income)
+    public async Task<bool> Delete(Income income)
     {
         _context.Incomes.Remove(income);
-        return Save();
+        return await Save();
     }
 
-    public bool Save()
+    public async Task<bool> Save()
     {
-        var saved = _context.SaveChanges();
+        var saved = await _context.SaveChangesAsync();
         return saved > 0 ? true : false;
     }
 }

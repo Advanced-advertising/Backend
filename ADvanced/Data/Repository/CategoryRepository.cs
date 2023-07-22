@@ -22,27 +22,27 @@ public class CategoryRepository : IRepository<Category>
         return _context.Categories.Where(c => c.Id == id).FirstOrDefault();
     }
 
-    public bool Create(Category category)
+    public async Task<bool> Create(Category category)
     {
         _context.Categories.Add(category);
-        return Save();
+        return await Save();
     }
 
-    public bool Update(Category category)
+    public async Task<bool> Update(Category category)
     {
         _context.Categories.Update(category);
-        return Save();
+        return await Save();
     }
 
-    public bool Delete(Category category)
+    public async Task<bool> Delete(Category category)
     {
         _context.Categories.Remove(category);
-        return Save();
+        return await Save();
     }
 
-    public bool Save()
+    public async Task<bool> Save()
     {
-        var saved = _context.SaveChanges();
+        var saved = await _context.SaveChangesAsync();
         return saved > 0 ? true : false;
     }
 }

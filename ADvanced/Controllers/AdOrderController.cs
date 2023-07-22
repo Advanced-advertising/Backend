@@ -33,7 +33,7 @@ public class AdOrderController : Controller
     [HttpPost]
     [ProducesResponseType(204)]
     [ProducesResponseType(400)]
-    public IActionResult CreateAddress([FromBody] AdOrderDto adOrderCreate)
+    public async Task<IActionResult> CreateAddress([FromBody] AdOrderDto adOrderCreate)
     {
 
         if (!ModelState.IsValid)
@@ -41,7 +41,7 @@ public class AdOrderController : Controller
 
         var adOrderMap = _mapper.Map<AdOrder>(adOrderCreate);
 
-        if (!_adOrderRepository.Create(adOrderMap))
+        if (!await _adOrderRepository.Create(adOrderMap))
         {
             ModelState.AddModelError("", "Something went wrong while savin");
             return StatusCode(500, ModelState);
@@ -54,14 +54,14 @@ public class AdOrderController : Controller
     [ProducesResponseType(400)]
     [ProducesResponseType(204)]
     [ProducesResponseType(404)]
-    public IActionResult UpdateAdOrder([FromBody] AdOrderDto updatedAdOrder)
+    public async Task<IActionResult> UpdateAdOrder([FromBody] AdOrderDto updatedAdOrder)
     {
         if (!ModelState.IsValid)
             return BadRequest();
 
         var adOrderMap = _mapper.Map<AdOrder>(updatedAdOrder);
 
-        if (!_adOrderRepository.Update(adOrderMap))
+        if (!await _adOrderRepository.Update(adOrderMap))
         {
             ModelState.AddModelError("", "Something went wrong updating AdOrder");
             return StatusCode(500, ModelState);
@@ -74,11 +74,11 @@ public class AdOrderController : Controller
     [ProducesResponseType(400)]
     [ProducesResponseType(204)]
     [ProducesResponseType(404)]
-    public IActionResult DeleteAdOrder(int adOrderId)
+    public async Task<IActionResult> DeleteAdOrder(int adOrderId)
     {
         var adOrderToDelete = _adOrderRepository.GetItem(adOrderId);
         
-        if (!_adOrderRepository.Delete(adOrderToDelete))
+        if (!await _adOrderRepository.Delete(adOrderToDelete))
         {
             ModelState.AddModelError("", "Something went wrong deleting AdOrder");
         };

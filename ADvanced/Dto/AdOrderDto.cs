@@ -11,6 +11,6 @@ public class AdOrderDto
     public string StartTime { get; set; }
     public string EndTime { get; set; }
     public Status Status { get; set; } // 
-    public Income Income { get; set; }
+    public List<Income> Incomes { get; set; }
     public Payment Payment { get; set; }
 }

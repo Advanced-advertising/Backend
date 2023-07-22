@@ -23,25 +23,26 @@ public class CategoryController : Controller
     [ProducesResponseType(200, Type = typeof(IEnumerable<Category>))]
     public IActionResult GetCategories()
     {
-        var categories = _categoryRepository.GetItemList().ToList();
+        var categories = _mapper.Map<List<CategoryDto>>(_categoryRepository.GetItemList());
         
         if (!ModelState.IsValid)
             return BadRequest(ModelState);
         
         return Ok(categories);
     }
+    
     [HttpPost]
     [ProducesResponseType(204)]
     [ProducesResponseType(400)]
-    public IActionResult CreateCategory([FromBody] CategoryDto categoryCreate)
+    public async Task<IActionResult> CreateCategory([FromBody] CategoryDto categoryCreate)
     {
 
         if (!ModelState.IsValid)
             return BadRequest(ModelState);
-
+        
         var categoryMap = _mapper.Map<Category>(categoryCreate);
 
-        if (!_categoryRepository.Create(categoryMap))
+        if (!await _categoryRepository.Create(categoryMap))
         {
             ModelState.AddModelError("", "Something went wrong while savin");
             return StatusCode(500, ModelState);
@@ -54,14 +55,14 @@ public class CategoryController : Controller
     [ProducesResponseType(400)]
     [ProducesResponseType(204)]
     [ProducesResponseType(404)]
-    public IActionResult UpdateCategory([FromBody] CategoryDto updatedCategory)
+    public async Task<IActionResult> UpdateCategory([FromBody] CategoryDto updatedCategory)
     {
         if (!ModelState.IsValid)
             return BadRequest();
 
         var categoryMap = _mapper.Map<Category>(updatedCategory);
 
-        if (!_categoryRepository.Update(categoryMap))
+        if (!await _categoryRepository.Update(categoryMap))
         {
             ModelState.AddModelError("", "Something went wrong updating category");
             return StatusCode(500, ModelState);
@@ -74,11 +75,11 @@ public class CategoryController : Controller
     [ProducesResponseType(400)]
     [ProducesResponseType(204)]
     [ProducesResponseType(404)]
-    public IActionResult DeleteCategory(int categoryId)
+    public async Task<IActionResult> DeleteCategory(int categoryId)
     {
         var categoryToDelete = _categoryRepository.GetItem(categoryId);
         
-        if (!_categoryRepository.Delete(categoryToDelete))
+        if (!await _categoryRepository.Delete(categoryToDelete))
         {
             ModelState.AddModelError("", "Something went wrong deleting category");
         };

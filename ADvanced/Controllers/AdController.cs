@@ -33,7 +33,7 @@ public class AdController : Controller
     [HttpPost]
     [ProducesResponseType(204)]
     [ProducesResponseType(400)]
-    public IActionResult CreateAd([FromBody] AdDto adCreate)
+    public async Task<IActionResult> CreateAd([FromBody] AdDto adCreate)
     {
 
         if (!ModelState.IsValid)
@@ -41,7 +41,7 @@ public class AdController : Controller
 
         var adMap = _mapper.Map<Ad>(adCreate);
 
-        if (!_adRepository.Create(adMap))
+        if (!await _adRepository.Create(adMap))
         {
             ModelState.AddModelError("", "Something went wrong while savin");
             return StatusCode(500, ModelState);
@@ -54,14 +54,14 @@ public class AdController : Controller
     [ProducesResponseType(400)]
     [ProducesResponseType(204)]
     [ProducesResponseType(404)]
-    public IActionResult UpdateAd([FromBody] AdDto updatedAd)
+    public async Task<IActionResult> UpdateAd([FromBody] AdDto updatedAd)
     {
         if (!ModelState.IsValid)
             return BadRequest();
 
         var adMap = _mapper.Map<Ad>(updatedAd);
 
-        if (!_adRepository.Update(adMap))
+        if (!await _adRepository.Update(adMap))
         {
             ModelState.AddModelError("", "Something went wrong updating category");
             return StatusCode(500, ModelState);
@@ -74,11 +74,11 @@ public class AdController : Controller
     [ProducesResponseType(400)]
     [ProducesResponseType(204)]
     [ProducesResponseType(404)]
-    public IActionResult DeleteAd(int adId)
+    public async Task<IActionResult> DeleteAd(int adId)
     {
         var adToDelete = _adRepository.GetItem(adId);
         
-        if (!_adRepository.Delete(adToDelete))
+        if (!await _adRepository.Delete(adToDelete))
         {
             ModelState.AddModelError("", "Something went wrong deleting ad");
         };

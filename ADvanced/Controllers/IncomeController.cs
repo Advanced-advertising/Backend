@@ -33,7 +33,7 @@ public class IncomeController : Controller
     [HttpPost]
     [ProducesResponseType(204)]
     [ProducesResponseType(400)]
-    public IActionResult Create([FromBody] IncomeDto incomeCreate)
+    public async Task<IActionResult> Create([FromBody] IncomeDto incomeCreate)
     {
 
         if (!ModelState.IsValid)
@@ -41,7 +41,7 @@ public class IncomeController : Controller
 
         var incomeMap = _mapper.Map<Income>(incomeCreate);
 
-        if (!_incomeRepository.Create(incomeMap))
+        if (!await _incomeRepository.Create(incomeMap))
         {
             ModelState.AddModelError("", "Something went wrong while savin");
             return StatusCode(500, ModelState);
@@ -54,14 +54,14 @@ public class IncomeController : Controller
     [ProducesResponseType(400)]
     [ProducesResponseType(204)]
     [ProducesResponseType(404)]
-    public IActionResult Update([FromBody] IncomeDto updatedIncome)
+    public async Task<IActionResult> Update([FromBody] IncomeDto updatedIncome)
     {
         if (!ModelState.IsValid)
             return BadRequest();
 
         var incomeMap = _mapper.Map<Income>(updatedIncome);
 
-        if (!_incomeRepository.Update(incomeMap))
+        if (!await _incomeRepository.Update(incomeMap))
         {
             ModelState.AddModelError("", "Something went wrong updating income");
             return StatusCode(500, ModelState);
@@ -74,11 +74,11 @@ public class IncomeController : Controller
     [ProducesResponseType(400)]
     [ProducesResponseType(204)]
     [ProducesResponseType(404)]
-    public IActionResult Delete(int incomeId)
+    public async Task<IActionResult> Delete(int incomeId)
     {
         var incomeToDelete = _incomeRepository.GetItem(incomeId);
         
-        if (!_incomeRepository.Delete(incomeToDelete))
+        if (!await _incomeRepository.Delete(incomeToDelete))
         {
             ModelState.AddModelError("", "Something went wrong deleting income");
         };

@@ -33,7 +33,7 @@ public class PaymentController : Controller
     [HttpPost]
     [ProducesResponseType(204)]
     [ProducesResponseType(400)]
-    public IActionResult Create([FromBody] PaymentDto paymentCreate)
+    public async Task<IActionResult> Create([FromBody] PaymentDto paymentCreate)
     {
 
         if (!ModelState.IsValid)
@@ -41,7 +41,7 @@ public class PaymentController : Controller
 
         var paymentMap = _mapper.Map<Payment>(paymentCreate);
 
-        if (!_paymentRepository.Create(paymentMap))
+        if (!await _paymentRepository.Create(paymentMap))
         {
             ModelState.AddModelError("", "Something went wrong while savin");
             return StatusCode(500, ModelState);
@@ -54,14 +54,14 @@ public class PaymentController : Controller
     [ProducesResponseType(400)]
     [ProducesResponseType(204)]
     [ProducesResponseType(404)]
-    public IActionResult Update([FromBody] PaymentDto updatedPayment)
+    public async Task<IActionResult> Update([FromBody] PaymentDto updatedPayment)
     {
         if (!ModelState.IsValid)
             return BadRequest();
 
         var paymentMap = _mapper.Map<Payment>(updatedPayment);
 
-        if (!_paymentRepository.Update(paymentMap))
+        if (!await _paymentRepository.Update(paymentMap))
         {
             ModelState.AddModelError("", "Something went wrong updating payment");
             return StatusCode(500, ModelState);
@@ -74,11 +74,11 @@ public class PaymentController : Controller
     [ProducesResponseType(400)]
     [ProducesResponseType(204)]
     [ProducesResponseType(404)]
-    public IActionResult Delete(int paymentId)
+    public async Task<IActionResult> Delete(int paymentId)
     {
         var paymentToDelete = _paymentRepository.GetItem(paymentId);
         
-        if (!_paymentRepository.Delete(paymentToDelete))
+        if (!await _paymentRepository.Delete(paymentToDelete))
         {
             ModelState.AddModelError("", "Something went wrong deleting payment");
         };

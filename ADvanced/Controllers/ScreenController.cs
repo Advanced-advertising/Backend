@@ -34,7 +34,7 @@ public class ScreenController : Controller
     [HttpPost]
     [ProducesResponseType(204)]
     [ProducesResponseType(400)]
-    public IActionResult Create([FromBody] ScreenDto screenCreate)
+    public async Task<IActionResult> Create([FromBody] ScreenDto screenCreate)
     {
 
         if (!ModelState.IsValid)
@@ -42,7 +42,7 @@ public class ScreenController : Controller
 
         var screenMap = _mapper.Map<Screen>(screenCreate);
 
-        if (!_screenRepository.Create(screenMap))
+        if (!await _screenRepository.Create(screenMap))
         {
             ModelState.AddModelError("", "Something went wrong while savin");
             return StatusCode(500, ModelState);
@@ -55,14 +55,14 @@ public class ScreenController : Controller
     [ProducesResponseType(400)]
     [ProducesResponseType(204)]
     [ProducesResponseType(404)]
-    public IActionResult Update([FromBody] ScreenDto updatedScreen)
+    public async Task<IActionResult> Update([FromBody] ScreenDto updatedScreen)
     {
         if (!ModelState.IsValid)
             return BadRequest();
 
         var screenMap = _mapper.Map<Screen>(updatedScreen);
 
-        if (!_screenRepository.Update(screenMap))
+        if (!await _screenRepository.Update(screenMap))
         {
             ModelState.AddModelError("", "Something went wrong updating screen");
             return StatusCode(500, ModelState);
@@ -75,11 +75,11 @@ public class ScreenController : Controller
     [ProducesResponseType(400)]
     [ProducesResponseType(204)]
     [ProducesResponseType(404)]
-    public IActionResult Delete(int screenId)
+    public async Task<IActionResult> Delete(int screenId)
     {
         var screenToDelete = _screenRepository.GetItem(screenId);
         
-        if (!_screenRepository.Delete(screenToDelete))
+        if (!await _screenRepository.Delete(screenToDelete))
         {
             ModelState.AddModelError("", "Something went wrong deleting screen");
         };

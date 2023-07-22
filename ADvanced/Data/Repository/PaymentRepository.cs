@@ -22,27 +22,27 @@ public class PaymentRepository : IRepository<Payment>
         return _context.Payments.Where(c => c.Id == id).FirstOrDefault();
     }
 
-    public bool Create(Payment payment)
+    public async Task<bool> Create(Payment payment)
     {
         _context.Payments.Add(payment);
-        return Save();
+        return await Save();
     }
 
-    public bool Update(Payment payment)
+    public async Task<bool> Update(Payment payment)
     {
         _context.Payments.Update(payment);
-        return Save();
+        return await Save();
     }
 
-    public bool Delete(Payment payment)
+    public async Task<bool> Delete(Payment payment)
     {
         _context.Payments.Remove(payment);
-        return Save();
+        return await Save();
     }
 
-    public bool Save()
+    public async Task<bool> Save()
     {
-        var saved = _context.SaveChanges();
+        var saved = await _context.SaveChangesAsync();
         return saved > 0 ? true : false;
     }
 }

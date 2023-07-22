@@ -33,7 +33,7 @@ public class AddressController : Controller
     [HttpPost]
     [ProducesResponseType(204)]
     [ProducesResponseType(400)]
-    public IActionResult CreateAddress([FromBody] AddressDto addressCreate)
+    public async Task<IActionResult> CreateAddress([FromBody] AddressDto addressCreate)
     {
 
         if (!ModelState.IsValid)
@@ -41,7 +41,7 @@ public class AddressController : Controller
 
         var addressMap = _mapper.Map<Address>(addressCreate);
 
-        if (!_addressRepository.Create(addressMap))
+        if (!await _addressRepository.Create(addressMap))
         {
             ModelState.AddModelError("", "Something went wrong while savin");
             return StatusCode(500, ModelState);
@@ -54,14 +54,14 @@ public class AddressController : Controller
     [ProducesResponseType(400)]
     [ProducesResponseType(204)]
     [ProducesResponseType(404)]
-    public IActionResult UpdateAddress([FromBody] AddressDto updatedAddress)
+    public async Task<IActionResult> UpdateAddress([FromBody] AddressDto updatedAddress)
     {
         if (!ModelState.IsValid)
             return BadRequest();
 
         var addressMap = _mapper.Map<Address>(updatedAddress);
 
-        if (!_addressRepository.Update(addressMap))
+        if (!await _addressRepository.Update(addressMap))
         {
             ModelState.AddModelError("", "Something went wrong updating address");
             return StatusCode(500, ModelState);
@@ -74,11 +74,11 @@ public class AddressController : Controller
     [ProducesResponseType(400)]
     [ProducesResponseType(204)]
     [ProducesResponseType(404)]
-    public IActionResult DeleteAddress(int addressId)
+    public async Task<IActionResult> DeleteAddress(int addressId)
     {
         var addressToDelete = _addressRepository.GetItem(addressId);
         
-        if (!_addressRepository.Delete(addressToDelete))
+        if (!await _addressRepository.Delete(addressToDelete))
         {
             ModelState.AddModelError("", "Something went wrong deleting address");
         };

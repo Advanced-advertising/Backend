@@ -22,27 +22,27 @@ public class AdOrderRepository : IRepository<AdOrder>
         return _context.AdOrders.Where(c => c.Id == id).FirstOrDefault();
     }
 
-    public bool Create(AdOrder adOrder)
+    public async Task<bool> Create(AdOrder adOrder)
     {
         _context.AdOrders.Add(adOrder);
-        return Save();
+        return await Save();
     }
 
-    public bool Update(AdOrder adOrder)
+    public async Task<bool> Update(AdOrder adOrder)
     {
         _context.AdOrders.Update(adOrder);
-        return Save();
+        return await Save();
     }
 
-    public bool Delete(AdOrder adOrder)
+    public async Task<bool> Delete(AdOrder adOrder)
     {
         _context.AdOrders.Remove(adOrder);
-        return Save();
+        return await Save();
     }
 
-    public bool Save()
+    public async Task<bool> Save()
     {
-        var saved = _context.SaveChanges();
+        var saved = await _context.SaveChangesAsync();
         return saved > 0 ? true : false;
     }
 }

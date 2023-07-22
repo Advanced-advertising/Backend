@@ -22,27 +22,27 @@ public class AdRepository : IRepository<Ad>
         return _context.Ads.Where(c => c.Id == id).FirstOrDefault();
     }
 
-    public bool Create(Ad ad)
+    public async Task<bool> Create(Ad ad)
     {
         _context.Ads.Add(ad);
-        return Save();
+        return await Save();
     }
 
-    public bool Update(Ad ad)
+    public async Task<bool> Update(Ad ad)
     {
         _context.Ads.Update(ad);
-        return Save();
+        return await Save();
     }
 
-    public bool Delete(Ad ad)
+    public async Task<bool> Delete(Ad ad)
     {
         _context.Ads.Remove(ad);
-        return Save();
+        return await Save();
     }
 
-    public bool Save()
+    public async Task<bool> Save()
     {
-        var saved = _context.SaveChanges();
+        var saved = await _context.SaveChangesAsync();
         return saved > 0 ? true : false;
     }
 }

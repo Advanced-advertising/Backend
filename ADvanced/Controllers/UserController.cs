@@ -34,7 +34,7 @@ public class UserController : Controller
     [HttpPost]
     [ProducesResponseType(204)]
     [ProducesResponseType(400)]
-    public IActionResult Create([FromBody] UserDto userCreate)
+    public async Task<IActionResult> Create([FromBody] UserDto userCreate)
     {
 
         if (!ModelState.IsValid)
@@ -42,7 +42,7 @@ public class UserController : Controller
 
         var userMap = _mapper.Map<User>(userCreate);
 
-        if (!_userRepository.Create(userMap))
+        if (!await _userRepository.Create(userMap))
         {
             ModelState.AddModelError("", "Something went wrong while savin");
             return StatusCode(500, ModelState);
@@ -55,14 +55,14 @@ public class UserController : Controller
     [ProducesResponseType(400)]
     [ProducesResponseType(204)]
     [ProducesResponseType(404)]
-    public IActionResult Update([FromBody] UserDto updatedUser)
+    public async Task<IActionResult> Update([FromBody] UserDto updatedUser)
     {
         if (!ModelState.IsValid)
             return BadRequest();
 
         var userMap = _mapper.Map<User>(updatedUser);
 
-        if (!_userRepository.Update(userMap))
+        if (!await _userRepository.Update(userMap))
         {
             ModelState.AddModelError("", "Something went wrong updating user");
             return StatusCode(500, ModelState);
@@ -75,11 +75,11 @@ public class UserController : Controller
     [ProducesResponseType(400)]
     [ProducesResponseType(204)]
     [ProducesResponseType(404)]
-    public IActionResult Delete(int userId)
+    public async Task<IActionResult> Delete(int userId)
     {
         var userToDelete = _userRepository.GetItem(userId);
         
-        if (!_userRepository.Delete(userToDelete))
+        if (!await _userRepository.Delete(userToDelete))
         {
             ModelState.AddModelError("", "Something went wrong deleting user");
         };
