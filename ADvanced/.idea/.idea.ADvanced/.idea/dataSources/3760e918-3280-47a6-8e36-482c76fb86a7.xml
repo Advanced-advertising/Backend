@@ -1,0 +1,956 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dataSource name="advanceddb">
+  <database-model serializer="dbm" dbms="MSSQL_LOCALDB" family-id="MSSQL_LOCALDB" format-version="4.39">
+    <root id="1">
+      <Dbms>MSSQL_LOCALDB</Dbms>
+      <Grants>2|||2|connect|G
+3|||2|connect|G
+4|||2|connect|G
+5|||2|connect|G
+0|root||102|authenticate server|G
+0|root||103|authenticate server|G
+0|root||1|connect sql|G
+0|root||256|connect sql|G
+0|root||257|connect sql|G
+0|root||258|connect sql|G
+0|root||105|control server|G
+0|root||2|view any database|G
+0|root||101|view any definition|G
+0|root||102|view any definition|G
+0|root||105|view any definition|G
+0|root||106|view any definition|G
+0|root||257|view any definition|G
+0|root||102|view server state|G
+0|root||257|view server state|G</Grants>
+      <PermissionsCheckSum>25719000802</PermissionsCheckSum>
+      <ServerVersion>15.0.4153</ServerVersion>
+    </root>
+    <database id="2" parent="1" name="advanceddb">
+      <Collation>SQL_Latin1_General_CP1_CI_AS</Collation>
+      <Current>1</Current>
+      <Fingerprint>6.45128/D744558C-1F95-412B-BD94-F5B13B6A4FB2@BUSITKA\LOCALDB#B313</Fingerprint>
+      <Grants>6|database||1|connect|G
+6|database||0|view any column encryption key definition|G
+6|database||0|view any column master key definition|G</Grants>
+      <ObjectId>6</ObjectId>
+      <PermissionsCheckSum>3196235284</PermissionsCheckSum>
+    </database>
+    <database id="3" parent="1" name="applicationdb">
+      <ObjectId>5</ObjectId>
+    </database>
+    <database id="4" parent="1" name="identitydb">
+      <ObjectId>7</ObjectId>
+    </database>
+    <database id="5" parent="1" name="master">
+      <Collation>SQL_Latin1_General_CP1_CI_AS</Collation>
+      <ObjectId>1</ObjectId>
+    </database>
+    <database id="6" parent="1" name="model">
+      <Collation>SQL_Latin1_General_CP1_CI_AS</Collation>
+      <ObjectId>3</ObjectId>
+    </database>
+    <database id="7" parent="1" name="msdb">
+      <Collation>SQL_Latin1_General_CP1_CI_AS</Collation>
+      <ObjectId>4</ObjectId>
+    </database>
+    <database id="8" parent="1" name="tempdb">
+      <Collation>SQL_Latin1_General_CP1_CI_AS</Collation>
+      <ObjectId>2</ObjectId>
+    </database>
+    <login id="9" parent="1" name="sa">
+      <DefaultDatabase>master</DefaultDatabase>
+      <ObjectId>1</ObjectId>
+    </login>
+    <login id="10" parent="1" name="public">
+      <Enabled>1</Enabled>
+      <ObjectId>2</ObjectId>
+      <Type>server-role</Type>
+    </login>
+    <login id="11" parent="1" name="sysadmin">
+      <Enabled>1</Enabled>
+      <ObjectId>3</ObjectId>
+      <Type>server-role</Type>
+    </login>
+    <login id="12" parent="1" name="securityadmin">
+      <Enabled>1</Enabled>
+      <ObjectId>4</ObjectId>
+      <Type>server-role</Type>
+    </login>
+    <login id="13" parent="1" name="serveradmin">
+      <Enabled>1</Enabled>
+      <ObjectId>5</ObjectId>
+      <Type>server-role</Type>
+    </login>
+    <login id="14" parent="1" name="setupadmin">
+      <Enabled>1</Enabled>
+      <ObjectId>6</ObjectId>
+      <Type>server-role</Type>
+    </login>
+    <login id="15" parent="1" name="processadmin">
+      <Enabled>1</Enabled>
+      <ObjectId>7</ObjectId>
+      <Type>server-role</Type>
+    </login>
+    <login id="16" parent="1" name="diskadmin">
+      <Enabled>1</Enabled>
+      <ObjectId>8</ObjectId>
+      <Type>server-role</Type>
+    </login>
+    <login id="17" parent="1" name="dbcreator">
+      <Enabled>1</Enabled>
+      <ObjectId>9</ObjectId>
+      <Type>server-role</Type>
+    </login>
+    <login id="18" parent="1" name="bulkadmin">
+      <Enabled>1</Enabled>
+      <ObjectId>10</ObjectId>
+      <Type>server-role</Type>
+    </login>
+    <login id="19" parent="1" name="##MS_SQLResourceSigningCertificate##">
+      <DefaultDatabase>master</DefaultDatabase>
+      <Enabled>1</Enabled>
+      <ObjectId>101</ObjectId>
+      <Type>certificate-mapped-login</Type>
+    </login>
+    <login id="20" parent="1" name="##MS_SQLReplicationSigningCertificate##">
+      <DefaultDatabase>master</DefaultDatabase>
+      <Enabled>1</Enabled>
+      <ObjectId>102</ObjectId>
+      <Type>certificate-mapped-login</Type>
+    </login>
+    <login id="21" parent="1" name="##MS_SQLAuthenticatorCertificate##">
+      <DefaultDatabase>master</DefaultDatabase>
+      <Enabled>1</Enabled>
+      <ObjectId>103</ObjectId>
+      <Type>certificate-mapped-login</Type>
+    </login>
+    <login id="22" parent="1" name="##MS_PolicySigningCertificate##">
+      <DefaultDatabase>master</DefaultDatabase>
+      <Enabled>1</Enabled>
+      <ObjectId>105</ObjectId>
+      <Type>certificate-mapped-login</Type>
+    </login>
+    <login id="23" parent="1" name="##MS_SmoExtendedSigningCertificate##">
+      <DefaultDatabase>master</DefaultDatabase>
+      <Enabled>1</Enabled>
+      <ObjectId>106</ObjectId>
+      <Type>certificate-mapped-login</Type>
+    </login>
+    <login id="24" parent="1" name="##MS_PolicyEventProcessingLogin##">
+      <DefaultDatabase>master</DefaultDatabase>
+      <ObjectId>256</ObjectId>
+    </login>
+    <login id="25" parent="1" name="##MS_PolicyTsqlExecutionLogin##">
+      <DefaultDatabase>master</DefaultDatabase>
+      <ObjectId>257</ObjectId>
+    </login>
+    <login id="26" parent="1" name="##MS_AgentSigningCertificate##">
+      <DefaultDatabase>master</DefaultDatabase>
+      <Enabled>1</Enabled>
+      <ObjectId>258</ObjectId>
+      <Type>certificate-mapped-login</Type>
+    </login>
+    <login id="27" parent="1" name="BUSITKA\АЛИНА">
+      <DefaultDatabase>master</DefaultDatabase>
+      <Enabled>1</Enabled>
+      <ObjectId>259</ObjectId>
+      <Type>windows-login</Type>
+    </login>
+    <login id="28" parent="1" name="NT SERVICE\SQLWriter">
+      <DefaultDatabase>master</DefaultDatabase>
+      <Enabled>1</Enabled>
+      <ObjectId>260</ObjectId>
+      <Type>windows-login</Type>
+    </login>
+    <role id="29" parent="2" name="INFORMATION_SCHEMA">
+      <AuthType>none</AuthType>
+      <ObjectId>3</ObjectId>
+    </role>
+    <role id="30" parent="2" name="db_accessadmin">
+      <AuthType>none</AuthType>
+      <ObjectId>16385</ObjectId>
+      <Type>database-role</Type>
+      <OwnerId>1</OwnerId>
+    </role>
+    <role id="31" parent="2" name="db_backupoperator">
+      <AuthType>none</AuthType>
+      <ObjectId>16389</ObjectId>
+      <Type>database-role</Type>
+      <OwnerId>1</OwnerId>
+    </role>
+    <role id="32" parent="2" name="db_datareader">
+      <AuthType>none</AuthType>
+      <ObjectId>16390</ObjectId>
+      <Type>database-role</Type>
+      <OwnerId>1</OwnerId>
+    </role>
+    <role id="33" parent="2" name="db_datawriter">
+      <AuthType>none</AuthType>
+      <ObjectId>16391</ObjectId>
+      <Type>database-role</Type>
+      <OwnerId>1</OwnerId>
+    </role>
+    <role id="34" parent="2" name="db_ddladmin">
+      <AuthType>none</AuthType>
+      <ObjectId>16387</ObjectId>
+      <Type>database-role</Type>
+      <OwnerId>1</OwnerId>
+    </role>
+    <role id="35" parent="2" name="db_denydatareader">
+      <AuthType>none</AuthType>
+      <ObjectId>16392</ObjectId>
+      <Type>database-role</Type>
+      <OwnerId>1</OwnerId>
+    </role>
+    <role id="36" parent="2" name="db_denydatawriter">
+      <AuthType>none</AuthType>
+      <ObjectId>16393</ObjectId>
+      <Type>database-role</Type>
+      <OwnerId>1</OwnerId>
+    </role>
+    <role id="37" parent="2" name="db_owner">
+      <AuthType>none</AuthType>
+      <ObjectId>16384</ObjectId>
+      <Type>database-role</Type>
+      <OwnerId>1</OwnerId>
+    </role>
+    <role id="38" parent="2" name="db_securityadmin">
+      <AuthType>none</AuthType>
+      <ObjectId>16386</ObjectId>
+      <Type>database-role</Type>
+      <OwnerId>1</OwnerId>
+    </role>
+    <role id="39" parent="2" name="dbo">
+      <AuthType>windows</AuthType>
+      <DefaultSchema>dbo</DefaultSchema>
+      <ObjectId>1</ObjectId>
+      <Type>windows-user</Type>
+    </role>
+    <role id="40" parent="2" name="guest">
+      <AuthType>none</AuthType>
+      <DefaultSchema>guest</DefaultSchema>
+      <ObjectId>2</ObjectId>
+    </role>
+    <role id="41" parent="2" name="public">
+      <AuthType>none</AuthType>
+      <ObjectId>0</ObjectId>
+      <Type>database-role</Type>
+      <OwnerId>1</OwnerId>
+    </role>
+    <role id="42" parent="2" name="sys">
+      <AuthType>none</AuthType>
+      <ObjectId>4</ObjectId>
+    </role>
+    <schema id="43" parent="2" name="INFORMATION_SCHEMA">
+      <ObjectId>3</ObjectId>
+    </schema>
+    <schema id="44" parent="2" name="db_accessadmin">
+      <ObjectId>16385</ObjectId>
+    </schema>
+    <schema id="45" parent="2" name="db_backupoperator">
+      <ObjectId>16389</ObjectId>
+    </schema>
+    <schema id="46" parent="2" name="db_datareader">
+      <ObjectId>16390</ObjectId>
+    </schema>
+    <schema id="47" parent="2" name="db_datawriter">
+      <ObjectId>16391</ObjectId>
+    </schema>
+    <schema id="48" parent="2" name="db_ddladmin">
+      <ObjectId>16387</ObjectId>
+    </schema>
+    <schema id="49" parent="2" name="db_denydatareader">
+      <ObjectId>16392</ObjectId>
+    </schema>
+    <schema id="50" parent="2" name="db_denydatawriter">
+      <ObjectId>16393</ObjectId>
+    </schema>
+    <schema id="51" parent="2" name="db_owner">
+      <ObjectId>16384</ObjectId>
+    </schema>
+    <schema id="52" parent="2" name="db_securityadmin">
+      <ObjectId>16386</ObjectId>
+    </schema>
+    <schema id="53" parent="2" name="dbo">
+      <Current>1</Current>
+      <IntrospectionTimestamp>2023-07-22.23:19:54.930</IntrospectionTimestamp>
+      <ObjectId>1</ObjectId>
+    </schema>
+    <schema id="54" parent="2" name="guest">
+      <ObjectId>2</ObjectId>
+    </schema>
+    <schema id="55" parent="2" name="sys">
+      <ObjectId>4</ObjectId>
+    </schema>
+    <table id="56" parent="53" name="AdOrders">
+      <CreatedTimestamp>2023-07-22.23:19:32.567</CreatedTimestamp>
+      <ModifiedTimestamp>2023-07-22.23:19:32.650</ModifiedTimestamp>
+      <ObjectId>1269579561</ObjectId>
+    </table>
+    <table id="57" parent="53" name="Addresses">
+      <CreatedTimestamp>2023-07-22.23:19:32.540</CreatedTimestamp>
+      <ModifiedTimestamp>2023-07-22.23:19:32.640</ModifiedTimestamp>
+      <ObjectId>981578535</ObjectId>
+    </table>
+    <table id="58" parent="53" name="Ads">
+      <CreatedTimestamp>2023-07-22.23:19:32.547</CreatedTimestamp>
+      <ModifiedTimestamp>2023-07-22.23:19:32.650</ModifiedTimestamp>
+      <ObjectId>1093578934</ObjectId>
+    </table>
+    <table id="59" parent="53" name="Business">
+      <CreatedTimestamp>2023-07-22.23:19:32.520</CreatedTimestamp>
+      <ModifiedTimestamp>2023-07-22.23:19:32.573</ModifiedTimestamp>
+      <ObjectId>885578193</ObjectId>
+    </table>
+    <table id="60" parent="53" name="BusinessBusinessWorkingTime">
+      <CreatedTimestamp>2023-07-22.23:19:32.543</CreatedTimestamp>
+      <ModifiedTimestamp>2023-07-22.23:19:32.653</ModifiedTimestamp>
+      <ObjectId>1029578706</ObjectId>
+    </table>
+    <table id="61" parent="53" name="BusinessWorkingTimes">
+      <CreatedTimestamp>2023-07-22.23:19:32.530</CreatedTimestamp>
+      <ModifiedTimestamp>2023-07-22.23:19:32.547</ModifiedTimestamp>
+      <ObjectId>917578307</ObjectId>
+    </table>
+    <table id="62" parent="53" name="Categories">
+      <CreatedTimestamp>2023-07-22.23:19:32.557</CreatedTimestamp>
+      <ModifiedTimestamp>2023-07-22.23:19:32.663</ModifiedTimestamp>
+      <ObjectId>1205579333</ObjectId>
+    </table>
+    <table id="63" parent="53" name="Incomes">
+      <CreatedTimestamp>2023-07-22.23:19:32.570</CreatedTimestamp>
+      <ModifiedTimestamp>2023-07-22.23:19:32.670</ModifiedTimestamp>
+      <ObjectId>1333579789</ObjectId>
+    </table>
+    <table id="64" parent="53" name="Payments">
+      <CreatedTimestamp>2023-07-22.23:19:32.573</CreatedTimestamp>
+      <ModifiedTimestamp>2023-07-22.23:19:32.673</ModifiedTimestamp>
+      <ObjectId>1397580017</ObjectId>
+    </table>
+    <table id="65" parent="53" name="Screens">
+      <CreatedTimestamp>2023-07-22.23:19:32.550</CreatedTimestamp>
+      <ModifiedTimestamp>2023-07-22.23:19:32.677</ModifiedTimestamp>
+      <ObjectId>1141579105</ObjectId>
+    </table>
+    <table id="66" parent="53" name="Users">
+      <CreatedTimestamp>2023-07-22.23:19:32.537</CreatedTimestamp>
+      <ModifiedTimestamp>2023-07-22.23:19:32.580</ModifiedTimestamp>
+      <ObjectId>949578421</ObjectId>
+    </table>
+    <column id="67" parent="56" name="Id">
+      <DataType>int|0s</DataType>
+      <NotNull>1</NotNull>
+      <Position>1</Position>
+      <SequenceIdentity>1</SequenceIdentity>
+    </column>
+    <column id="68" parent="56" name="AdId">
+      <DataType>int|0s</DataType>
+      <NotNull>1</NotNull>
+      <Position>2</Position>
+    </column>
+    <column id="69" parent="56" name="ScreenId">
+      <DataType>int|0s</DataType>
+      <NotNull>1</NotNull>
+      <Position>3</Position>
+    </column>
+    <column id="70" parent="56" name="Price">
+      <DataType>decimal(18,2)|0s</DataType>
+      <NotNull>1</NotNull>
+      <Position>4</Position>
+    </column>
+    <column id="71" parent="56" name="StartTime">
+      <DataType>nvarchar(max)|0s</DataType>
+      <NotNull>1</NotNull>
+      <Position>5</Position>
+    </column>
+    <column id="72" parent="56" name="EndTime">
+      <DataType>nvarchar(max)|0s</DataType>
+      <NotNull>1</NotNull>
+      <Position>6</Position>
+    </column>
+    <column id="73" parent="56" name="Status">
+      <DataType>int|0s</DataType>
+      <NotNull>1</NotNull>
+      <Position>7</Position>
+    </column>
+    <foreign-key id="74" parent="56" name="FK_AdOrders_Ads_AdId">
+      <ColNames>AdId</ColNames>
+      <CreatedTimestamp>2023-07-22.23:19:32.570</CreatedTimestamp>
+      <ModifiedTimestamp>2023-07-22.23:19:32.570</ModifiedTimestamp>
+      <ObjectId>1301579675</ObjectId>
+      <OnDelete>cascade</OnDelete>
+      <RefColNames>Id</RefColNames>
+      <RefKeyName>PK_Ads</RefKeyName>
+      <RefTableId>1093578934</RefTableId>
+      <RefTableName>Ads</RefTableName>
+    </foreign-key>
+    <foreign-key id="75" parent="56" name="FK_AdOrders_Screens_ScreenId">
+      <ColNames>ScreenId</ColNames>
+      <CreatedTimestamp>2023-07-22.23:19:32.570</CreatedTimestamp>
+      <ModifiedTimestamp>2023-07-22.23:19:32.570</ModifiedTimestamp>
+      <ObjectId>1317579732</ObjectId>
+      <OnDelete>cascade</OnDelete>
+      <RefColNames>Id</RefColNames>
+      <RefKeyName>PK_Screens</RefKeyName>
+      <RefTableId>1141579105</RefTableId>
+      <RefTableName>Screens</RefTableName>
+    </foreign-key>
+    <index id="76" parent="56" name="PK_AdOrders">
+      <Clustering>1</Clustering>
+      <ColNames>Id</ColNames>
+      <Position>1</Position>
+      <Unique>1</Unique>
+    </index>
+    <index id="77" parent="56" name="IX_AdOrders_AdId">
+      <ColNames>AdId</ColNames>
+      <Position>2</Position>
+    </index>
+    <index id="78" parent="56" name="IX_AdOrders_ScreenId">
+      <ColNames>ScreenId</ColNames>
+      <Position>3</Position>
+    </index>
+    <key id="79" parent="56" name="PK_AdOrders">
+      <ColNames>Id</ColNames>
+      <CreatedTimestamp>2023-07-22.23:19:32.567</CreatedTimestamp>
+      <ModifiedTimestamp>2023-07-22.23:19:32.567</ModifiedTimestamp>
+      <ObjectId>1285579618</ObjectId>
+      <Primary>1</Primary>
+      <UnderlyingIndexName>PK_AdOrders</UnderlyingIndexName>
+    </key>
+    <column id="80" parent="57" name="Id">
+      <DataType>int|0s</DataType>
+      <NotNull>1</NotNull>
+      <Position>1</Position>
+      <SequenceIdentity>1</SequenceIdentity>
+    </column>
+    <column id="81" parent="57" name="Name">
+      <DataType>nvarchar(max)|0s</DataType>
+      <NotNull>1</NotNull>
+      <Position>2</Position>
+    </column>
+    <column id="82" parent="57" name="BusinessId">
+      <DataType>int|0s</DataType>
+      <NotNull>1</NotNull>
+      <Position>3</Position>
+    </column>
+    <foreign-key id="83" parent="57" name="FK_Addresses_Business_BusinessId">
+      <ColNames>BusinessId</ColNames>
+      <CreatedTimestamp>2023-07-22.23:19:32.540</CreatedTimestamp>
+      <ModifiedTimestamp>2023-07-22.23:19:32.540</ModifiedTimestamp>
+      <ObjectId>1013578649</ObjectId>
+      <OnDelete>cascade</OnDelete>
+      <RefColNames>Id</RefColNames>
+      <RefKeyName>PK_Business</RefKeyName>
+      <RefTableId>885578193</RefTableId>
+      <RefTableName>Business</RefTableName>
+    </foreign-key>
+    <index id="84" parent="57" name="PK_Addresses">
+      <Clustering>1</Clustering>
+      <ColNames>Id</ColNames>
+      <Position>1</Position>
+      <Unique>1</Unique>
+    </index>
+    <index id="85" parent="57" name="IX_Addresses_BusinessId">
+      <ColNames>BusinessId</ColNames>
+      <Position>2</Position>
+    </index>
+    <key id="86" parent="57" name="PK_Addresses">
+      <ColNames>Id</ColNames>
+      <CreatedTimestamp>2023-07-22.23:19:32.540</CreatedTimestamp>
+      <ModifiedTimestamp>2023-07-22.23:19:32.540</ModifiedTimestamp>
+      <ObjectId>997578592</ObjectId>
+      <Primary>1</Primary>
+      <UnderlyingIndexName>PK_Addresses</UnderlyingIndexName>
+    </key>
+    <column id="87" parent="58" name="Id">
+      <DataType>int|0s</DataType>
+      <NotNull>1</NotNull>
+      <Position>1</Position>
+      <SequenceIdentity>1</SequenceIdentity>
+    </column>
+    <column id="88" parent="58" name="UserId">
+      <DataType>int|0s</DataType>
+      <NotNull>1</NotNull>
+      <Position>2</Position>
+    </column>
+    <column id="89" parent="58" name="Name">
+      <DataType>nvarchar(max)|0s</DataType>
+      <NotNull>1</NotNull>
+      <Position>3</Position>
+    </column>
+    <column id="90" parent="58" name="Img">
+      <DataType>nvarchar(max)|0s</DataType>
+      <NotNull>1</NotNull>
+      <Position>4</Position>
+    </column>
+    <column id="91" parent="58" name="Status">
+      <DataType>int|0s</DataType>
+      <NotNull>1</NotNull>
+      <Position>5</Position>
+    </column>
+    <foreign-key id="92" parent="58" name="FK_Ads_Users_UserId">
+      <ColNames>UserId</ColNames>
+      <CreatedTimestamp>2023-07-22.23:19:32.550</CreatedTimestamp>
+      <ModifiedTimestamp>2023-07-22.23:19:32.550</ModifiedTimestamp>
+      <ObjectId>1125579048</ObjectId>
+      <OnDelete>cascade</OnDelete>
+      <RefColNames>Id</RefColNames>
+      <RefKeyName>PK_Users</RefKeyName>
+      <RefTableId>949578421</RefTableId>
+      <RefTableName>Users</RefTableName>
+    </foreign-key>
+    <index id="93" parent="58" name="PK_Ads">
+      <Clustering>1</Clustering>
+      <ColNames>Id</ColNames>
+      <Position>1</Position>
+      <Unique>1</Unique>
+    </index>
+    <index id="94" parent="58" name="IX_Ads_UserId">
+      <ColNames>UserId</ColNames>
+      <Position>2</Position>
+    </index>
+    <key id="95" parent="58" name="PK_Ads">
+      <ColNames>Id</ColNames>
+      <CreatedTimestamp>2023-07-22.23:19:32.550</CreatedTimestamp>
+      <ModifiedTimestamp>2023-07-22.23:19:32.550</ModifiedTimestamp>
+      <ObjectId>1109578991</ObjectId>
+      <Primary>1</Primary>
+      <UnderlyingIndexName>PK_Ads</UnderlyingIndexName>
+    </key>
+    <column id="96" parent="59" name="Id">
+      <DataType>int|0s</DataType>
+      <NotNull>1</NotNull>
+      <Position>1</Position>
+      <SequenceIdentity>1</SequenceIdentity>
+    </column>
+    <column id="97" parent="59" name="Name">
+      <DataType>nvarchar(max)|0s</DataType>
+      <NotNull>1</NotNull>
+      <Position>2</Position>
+    </column>
+    <column id="98" parent="59" name="Email">
+      <DataType>nvarchar(max)|0s</DataType>
+      <NotNull>1</NotNull>
+      <Position>3</Position>
+    </column>
+    <column id="99" parent="59" name="Password">
+      <DataType>nvarchar(max)|0s</DataType>
+      <NotNull>1</NotNull>
+      <Position>4</Position>
+    </column>
+    <column id="100" parent="59" name="PhoneNumber">
+      <DataType>nvarchar(max)|0s</DataType>
+      <NotNull>1</NotNull>
+      <Position>5</Position>
+    </column>
+    <column id="101" parent="59" name="Img">
+      <DataType>nvarchar(max)|0s</DataType>
+      <NotNull>1</NotNull>
+      <Position>6</Position>
+    </column>
+    <index id="102" parent="59" name="PK_Business">
+      <Clustering>1</Clustering>
+      <ColNames>Id</ColNames>
+      <Position>1</Position>
+      <Unique>1</Unique>
+    </index>
+    <key id="103" parent="59" name="PK_Business">
+      <ColNames>Id</ColNames>
+      <CreatedTimestamp>2023-07-22.23:19:32.530</CreatedTimestamp>
+      <ModifiedTimestamp>2023-07-22.23:19:32.530</ModifiedTimestamp>
+      <ObjectId>901578250</ObjectId>
+      <Primary>1</Primary>
+      <UnderlyingIndexName>PK_Business</UnderlyingIndexName>
+    </key>
+    <column id="104" parent="60" name="BusinessWorkingTimesId">
+      <DataType>int|0s</DataType>
+      <NotNull>1</NotNull>
+      <Position>1</Position>
+    </column>
+    <column id="105" parent="60" name="BusinessesId">
+      <DataType>int|0s</DataType>
+      <NotNull>1</NotNull>
+      <Position>2</Position>
+    </column>
+    <foreign-key id="106" parent="60" name="FK_BusinessBusinessWorkingTime_BusinessWorkingTimes_BusinessWorkingTimesId">
+      <ColNames>BusinessWorkingTimesId</ColNames>
+      <CreatedTimestamp>2023-07-22.23:19:32.547</CreatedTimestamp>
+      <ModifiedTimestamp>2023-07-22.23:19:32.547</ModifiedTimestamp>
+      <ObjectId>1061578820</ObjectId>
+      <OnDelete>cascade</OnDelete>
+      <RefColNames>Id</RefColNames>
+      <RefKeyName>PK_BusinessWorkingTimes</RefKeyName>
+      <RefTableId>917578307</RefTableId>
+      <RefTableName>BusinessWorkingTimes</RefTableName>
+    </foreign-key>
+    <foreign-key id="107" parent="60" name="FK_BusinessBusinessWorkingTime_Business_BusinessesId">
+      <ColNames>BusinessesId</ColNames>
+      <CreatedTimestamp>2023-07-22.23:19:32.547</CreatedTimestamp>
+      <ModifiedTimestamp>2023-07-22.23:19:32.547</ModifiedTimestamp>
+      <ObjectId>1077578877</ObjectId>
+      <OnDelete>cascade</OnDelete>
+      <RefColNames>Id</RefColNames>
+      <RefKeyName>PK_Business</RefKeyName>
+      <RefTableId>885578193</RefTableId>
+      <RefTableName>Business</RefTableName>
+    </foreign-key>
+    <index id="108" parent="60" name="PK_BusinessBusinessWorkingTime">
+      <Clustering>1</Clustering>
+      <ColNames>BusinessWorkingTimesId
+BusinessesId</ColNames>
+      <Position>1</Position>
+      <Unique>1</Unique>
+    </index>
+    <index id="109" parent="60" name="IX_BusinessBusinessWorkingTime_BusinessesId">
+      <ColNames>BusinessesId</ColNames>
+      <Position>2</Position>
+    </index>
+    <key id="110" parent="60" name="PK_BusinessBusinessWorkingTime">
+      <ColNames>BusinessWorkingTimesId
+BusinessesId</ColNames>
+      <CreatedTimestamp>2023-07-22.23:19:32.547</CreatedTimestamp>
+      <ModifiedTimestamp>2023-07-22.23:19:32.547</ModifiedTimestamp>
+      <ObjectId>1045578763</ObjectId>
+      <Primary>1</Primary>
+      <UnderlyingIndexName>PK_BusinessBusinessWorkingTime</UnderlyingIndexName>
+    </key>
+    <column id="111" parent="61" name="Id">
+      <DataType>int|0s</DataType>
+      <NotNull>1</NotNull>
+      <Position>1</Position>
+      <SequenceIdentity>1</SequenceIdentity>
+    </column>
+    <column id="112" parent="61" name="DayOfTheWeek">
+      <DataType>nvarchar(max)|0s</DataType>
+      <NotNull>1</NotNull>
+      <Position>2</Position>
+    </column>
+    <column id="113" parent="61" name="OpeningTime">
+      <DataType>nvarchar(max)|0s</DataType>
+      <NotNull>1</NotNull>
+      <Position>3</Position>
+    </column>
+    <column id="114" parent="61" name="ClotheTime">
+      <DataType>nvarchar(max)|0s</DataType>
+      <NotNull>1</NotNull>
+      <Position>4</Position>
+    </column>
+    <index id="115" parent="61" name="PK_BusinessWorkingTimes">
+      <Clustering>1</Clustering>
+      <ColNames>Id</ColNames>
+      <Position>1</Position>
+      <Unique>1</Unique>
+    </index>
+    <key id="116" parent="61" name="PK_BusinessWorkingTimes">
+      <ColNames>Id</ColNames>
+      <CreatedTimestamp>2023-07-22.23:19:32.533</CreatedTimestamp>
+      <ModifiedTimestamp>2023-07-22.23:19:32.533</ModifiedTimestamp>
+      <ObjectId>933578364</ObjectId>
+      <Primary>1</Primary>
+      <UnderlyingIndexName>PK_BusinessWorkingTimes</UnderlyingIndexName>
+    </key>
+    <column id="117" parent="62" name="Id">
+      <DataType>int|0s</DataType>
+      <NotNull>1</NotNull>
+      <Position>1</Position>
+      <SequenceIdentity>1(4)</SequenceIdentity>
+    </column>
+    <column id="118" parent="62" name="Name">
+      <DataType>nvarchar(max)|0s</DataType>
+      <NotNull>1</NotNull>
+      <Position>2</Position>
+    </column>
+    <column id="119" parent="62" name="AdId">
+      <DataType>int|0s</DataType>
+      <Position>3</Position>
+    </column>
+    <column id="120" parent="62" name="BusinessId">
+      <DataType>int|0s</DataType>
+      <Position>4</Position>
+    </column>
+    <foreign-key id="121" parent="62" name="FK_Categories_Ads_AdId">
+      <ColNames>AdId</ColNames>
+      <CreatedTimestamp>2023-07-22.23:19:32.563</CreatedTimestamp>
+      <ModifiedTimestamp>2023-07-22.23:19:32.563</ModifiedTimestamp>
+      <ObjectId>1237579447</ObjectId>
+      <RefColNames>Id</RefColNames>
+      <RefKeyName>PK_Ads</RefKeyName>
+      <RefTableId>1093578934</RefTableId>
+      <RefTableName>Ads</RefTableName>
+    </foreign-key>
+    <foreign-key id="122" parent="62" name="FK_Categories_Business_BusinessId">
+      <ColNames>BusinessId</ColNames>
+      <CreatedTimestamp>2023-07-22.23:19:32.563</CreatedTimestamp>
+      <ModifiedTimestamp>2023-07-22.23:19:32.563</ModifiedTimestamp>
+      <ObjectId>1253579504</ObjectId>
+      <RefColNames>Id</RefColNames>
+      <RefKeyName>PK_Business</RefKeyName>
+      <RefTableId>885578193</RefTableId>
+      <RefTableName>Business</RefTableName>
+    </foreign-key>
+    <index id="123" parent="62" name="PK_Categories">
+      <Clustering>1</Clustering>
+      <ColNames>Id</ColNames>
+      <Position>1</Position>
+      <Unique>1</Unique>
+    </index>
+    <index id="124" parent="62" name="IX_Categories_AdId">
+      <ColNames>AdId</ColNames>
+      <Position>2</Position>
+    </index>
+    <index id="125" parent="62" name="IX_Categories_BusinessId">
+      <ColNames>BusinessId</ColNames>
+      <Position>3</Position>
+    </index>
+    <key id="126" parent="62" name="PK_Categories">
+      <ColNames>Id</ColNames>
+      <CreatedTimestamp>2023-07-22.23:19:32.563</CreatedTimestamp>
+      <ModifiedTimestamp>2023-07-22.23:19:32.563</ModifiedTimestamp>
+      <ObjectId>1221579390</ObjectId>
+      <Primary>1</Primary>
+      <UnderlyingIndexName>PK_Categories</UnderlyingIndexName>
+    </key>
+    <column id="127" parent="63" name="Id">
+      <DataType>int|0s</DataType>
+      <NotNull>1</NotNull>
+      <Position>1</Position>
+      <SequenceIdentity>1</SequenceIdentity>
+    </column>
+    <column id="128" parent="63" name="BusinessId">
+      <DataType>int|0s</DataType>
+      <NotNull>1</NotNull>
+      <Position>2</Position>
+    </column>
+    <column id="129" parent="63" name="IncomeCount">
+      <DataType>decimal(18,2)|0s</DataType>
+      <NotNull>1</NotNull>
+      <Position>3</Position>
+    </column>
+    <column id="130" parent="63" name="AdOrderId">
+      <DataType>int|0s</DataType>
+      <Position>4</Position>
+    </column>
+    <foreign-key id="131" parent="63" name="FK_Incomes_Business_BusinessId">
+      <ColNames>BusinessId</ColNames>
+      <CreatedTimestamp>2023-07-22.23:19:32.573</CreatedTimestamp>
+      <ModifiedTimestamp>2023-07-22.23:19:32.573</ModifiedTimestamp>
+      <ObjectId>1381579960</ObjectId>
+      <OnDelete>cascade</OnDelete>
+      <RefColNames>Id</RefColNames>
+      <RefKeyName>PK_Business</RefKeyName>
+      <RefTableId>885578193</RefTableId>
+      <RefTableName>Business</RefTableName>
+    </foreign-key>
+    <foreign-key id="132" parent="63" name="FK_Incomes_AdOrders_AdOrderId">
+      <ColNames>AdOrderId</ColNames>
+      <CreatedTimestamp>2023-07-22.23:19:32.570</CreatedTimestamp>
+      <ModifiedTimestamp>2023-07-22.23:19:32.570</ModifiedTimestamp>
+      <ObjectId>1365579903</ObjectId>
+      <RefColNames>Id</RefColNames>
+      <RefKeyName>PK_AdOrders</RefKeyName>
+      <RefTableId>1269579561</RefTableId>
+      <RefTableName>AdOrders</RefTableName>
+    </foreign-key>
+    <index id="133" parent="63" name="PK_Incomes">
+      <Clustering>1</Clustering>
+      <ColNames>Id</ColNames>
+      <Position>1</Position>
+      <Unique>1</Unique>
+    </index>
+    <index id="134" parent="63" name="IX_Incomes_AdOrderId">
+      <ColNames>AdOrderId</ColNames>
+      <Position>2</Position>
+    </index>
+    <index id="135" parent="63" name="IX_Incomes_BusinessId">
+      <ColNames>BusinessId</ColNames>
+      <Position>3</Position>
+    </index>
+    <key id="136" parent="63" name="PK_Incomes">
+      <ColNames>Id</ColNames>
+      <CreatedTimestamp>2023-07-22.23:19:32.570</CreatedTimestamp>
+      <ModifiedTimestamp>2023-07-22.23:19:32.570</ModifiedTimestamp>
+      <ObjectId>1349579846</ObjectId>
+      <Primary>1</Primary>
+      <UnderlyingIndexName>PK_Incomes</UnderlyingIndexName>
+    </key>
+    <column id="137" parent="64" name="Id">
+      <DataType>int|0s</DataType>
+      <NotNull>1</NotNull>
+      <Position>1</Position>
+      <SequenceIdentity>1</SequenceIdentity>
+    </column>
+    <column id="138" parent="64" name="Price">
+      <DataType>decimal(18,2)|0s</DataType>
+      <NotNull>1</NotNull>
+      <Position>2</Position>
+    </column>
+    <column id="139" parent="64" name="UserId">
+      <DataType>int|0s</DataType>
+      <NotNull>1</NotNull>
+      <Position>3</Position>
+    </column>
+    <column id="140" parent="64" name="AdOrderId">
+      <DataType>int|0s</DataType>
+      <Position>4</Position>
+    </column>
+    <foreign-key id="141" parent="64" name="FK_Payments_Users_UserId">
+      <ColNames>UserId</ColNames>
+      <CreatedTimestamp>2023-07-22.23:19:32.580</CreatedTimestamp>
+      <ModifiedTimestamp>2023-07-22.23:19:32.580</ModifiedTimestamp>
+      <ObjectId>1445580188</ObjectId>
+      <OnDelete>cascade</OnDelete>
+      <RefColNames>Id</RefColNames>
+      <RefKeyName>PK_Users</RefKeyName>
+      <RefTableId>949578421</RefTableId>
+      <RefTableName>Users</RefTableName>
+    </foreign-key>
+    <foreign-key id="142" parent="64" name="FK_Payments_AdOrders_AdOrderId">
+      <ColNames>AdOrderId</ColNames>
+      <CreatedTimestamp>2023-07-22.23:19:32.580</CreatedTimestamp>
+      <ModifiedTimestamp>2023-07-22.23:19:32.580</ModifiedTimestamp>
+      <ObjectId>1429580131</ObjectId>
+      <RefColNames>Id</RefColNames>
+      <RefKeyName>PK_AdOrders</RefKeyName>
+      <RefTableId>1269579561</RefTableId>
+      <RefTableName>AdOrders</RefTableName>
+    </foreign-key>
+    <index id="143" parent="64" name="PK_Payments">
+      <Clustering>1</Clustering>
+      <ColNames>Id</ColNames>
+      <Position>1</Position>
+      <Unique>1</Unique>
+    </index>
+    <index id="144" parent="64" name="IX_Payments_AdOrderId">
+      <ColNames>AdOrderId</ColNames>
+      <Position>2</Position>
+    </index>
+    <index id="145" parent="64" name="IX_Payments_UserId">
+      <ColNames>UserId</ColNames>
+      <Position>3</Position>
+    </index>
+    <key id="146" parent="64" name="PK_Payments">
+      <ColNames>Id</ColNames>
+      <CreatedTimestamp>2023-07-22.23:19:32.580</CreatedTimestamp>
+      <ModifiedTimestamp>2023-07-22.23:19:32.580</ModifiedTimestamp>
+      <ObjectId>1413580074</ObjectId>
+      <Primary>1</Primary>
+      <UnderlyingIndexName>PK_Payments</UnderlyingIndexName>
+    </key>
+    <column id="147" parent="65" name="Id">
+      <DataType>int|0s</DataType>
+      <NotNull>1</NotNull>
+      <Position>1</Position>
+      <SequenceIdentity>1</SequenceIdentity>
+    </column>
+    <column id="148" parent="65" name="Name">
+      <DataType>nvarchar(max)|0s</DataType>
+      <NotNull>1</NotNull>
+      <Position>2</Position>
+    </column>
+    <column id="149" parent="65" name="PricePerTime">
+      <DataType>decimal(18,2)|0s</DataType>
+      <NotNull>1</NotNull>
+      <Position>3</Position>
+    </column>
+    <column id="150" parent="65" name="Traffic">
+      <DataType>int|0s</DataType>
+      <NotNull>1</NotNull>
+      <Position>4</Position>
+    </column>
+    <column id="151" parent="65" name="Characteristics">
+      <DataType>nvarchar(max)|0s</DataType>
+      <NotNull>1</NotNull>
+      <Position>5</Position>
+    </column>
+    <column id="152" parent="65" name="AddressId">
+      <DataType>int|0s</DataType>
+      <Position>6</Position>
+    </column>
+    <column id="153" parent="65" name="BusinessId">
+      <DataType>int|0s</DataType>
+      <Position>7</Position>
+    </column>
+    <foreign-key id="154" parent="65" name="FK_Screens_Addresses_AddressId">
+      <ColNames>AddressId</ColNames>
+      <CreatedTimestamp>2023-07-22.23:19:32.553</CreatedTimestamp>
+      <ModifiedTimestamp>2023-07-22.23:19:32.553</ModifiedTimestamp>
+      <ObjectId>1173579219</ObjectId>
+      <RefColNames>Id</RefColNames>
+      <RefKeyName>PK_Addresses</RefKeyName>
+      <RefTableId>981578535</RefTableId>
+      <RefTableName>Addresses</RefTableName>
+    </foreign-key>
+    <foreign-key id="155" parent="65" name="FK_Screens_Business_BusinessId">
+      <ColNames>BusinessId</ColNames>
+      <CreatedTimestamp>2023-07-22.23:19:32.557</CreatedTimestamp>
+      <ModifiedTimestamp>2023-07-22.23:19:32.557</ModifiedTimestamp>
+      <ObjectId>1189579276</ObjectId>
+      <RefColNames>Id</RefColNames>
+      <RefKeyName>PK_Business</RefKeyName>
+      <RefTableId>885578193</RefTableId>
+      <RefTableName>Business</RefTableName>
+    </foreign-key>
+    <index id="156" parent="65" name="PK_Screens">
+      <Clustering>1</Clustering>
+      <ColNames>Id</ColNames>
+      <Position>1</Position>
+      <Unique>1</Unique>
+    </index>
+    <index id="157" parent="65" name="IX_Screens_AddressId">
+      <ColNames>AddressId</ColNames>
+      <Position>2</Position>
+    </index>
+    <index id="158" parent="65" name="IX_Screens_BusinessId">
+      <ColNames>BusinessId</ColNames>
+      <Position>3</Position>
+    </index>
+    <key id="159" parent="65" name="PK_Screens">
+      <ColNames>Id</ColNames>
+      <CreatedTimestamp>2023-07-22.23:19:32.553</CreatedTimestamp>
+      <ModifiedTimestamp>2023-07-22.23:19:32.553</ModifiedTimestamp>
+      <ObjectId>1157579162</ObjectId>
+      <Primary>1</Primary>
+      <UnderlyingIndexName>PK_Screens</UnderlyingIndexName>
+    </key>
+    <column id="160" parent="66" name="Id">
+      <DataType>int|0s</DataType>
+      <NotNull>1</NotNull>
+      <Position>1</Position>
+      <SequenceIdentity>1</SequenceIdentity>
+    </column>
+    <column id="161" parent="66" name="Name">
+      <DataType>nvarchar(max)|0s</DataType>
+      <NotNull>1</NotNull>
+      <Position>2</Position>
+    </column>
+    <column id="162" parent="66" name="Password">
+      <DataType>nvarchar(max)|0s</DataType>
+      <NotNull>1</NotNull>
+      <Position>3</Position>
+    </column>
+    <column id="163" parent="66" name="Email">
+      <DataType>nvarchar(max)|0s</DataType>
+      <NotNull>1</NotNull>
+      <Position>4</Position>
+    </column>
+    <column id="164" parent="66" name="PhoneNumber">
+      <DataType>nvarchar(max)|0s</DataType>
+      <NotNull>1</NotNull>
+      <Position>5</Position>
+    </column>
+    <index id="165" parent="66" name="PK_Users">
+      <Clustering>1</Clustering>
+      <ColNames>Id</ColNames>
+      <Position>1</Position>
+      <Unique>1</Unique>
+    </index>
+    <key id="166" parent="66" name="PK_Users">
+      <ColNames>Id</ColNames>
+      <CreatedTimestamp>2023-07-22.23:19:32.537</CreatedTimestamp>
+      <ModifiedTimestamp>2023-07-22.23:19:32.537</ModifiedTimestamp>
+      <ObjectId>965578478</ObjectId>
+      <Primary>1</Primary>
+      <UnderlyingIndexName>PK_Users</UnderlyingIndexName>
+    </key>
+  </database-model>
+</dataSource>
