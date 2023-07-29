@@ -5,6 +5,7 @@ using ADvanced.Data.Repository;
 using ADvanced.Dto;
 using ADvanced.Models;
 using Microsoft.EntityFrameworkCore;
+using Serilog;
 
 var builder = WebApplication.CreateBuilder();
 string connection = "Server=(localdb)\\mssqllocaldb;Database=advanceddb;Trusted_Connection=True;";
@@ -24,8 +25,12 @@ builder.Services.AddScoped<IRepository<Payment>, PaymentRepository>();
 builder.Services.AddScoped<IRepository<Screen>, ScreenRepository>();
 builder.Services.AddScoped<IRepository<User>, UserRepository>();
 
+builder.Host.UseSerilog((context, configuration) =>
+    configuration.ReadFrom.Configuration(context.Configuration));
+
 var app = builder.Build();
 
+app.UseSerilogRequestLogging();
 app.UseDefaultFiles();
 app.UseStaticFiles();
 app.MapControllers();

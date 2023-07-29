@@ -6,40 +6,27 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="79b12a13-811b-450a-a4bc-cc9c2553ca19" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/Data/Interfaces/ICategoryRepository.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.ADvanced/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.ADvanced/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ADvanced.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/ADvanced.csproj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Controllers/CategoryController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Controllers/CategoryController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Controllers/IncomeController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Controllers/IncomeController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Data/ApplicationContext.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Data/ApplicationContext.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Data/Interfaces/IRepository.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Data/Interfaces/IRepository.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Data/Repository/AdOrderRepository.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Data/Repository/AdOrderRepository.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Data/Repository/AdRepository.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Data/Repository/AdRepository.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Data/Repository/AddressRepository.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Data/Repository/AddressRepository.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Data/Repository/BusinessRepository.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Data/Repository/BusinessRepository.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Data/Repository/BussinesWorkingTimeRepository.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Data/Repository/BussinesWorkingTimeRepository.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Data/Repository/CategoryRepository.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Data/Repository/CategoryRepository.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Data/Repository/IncomeRepository.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Data/Repository/IncomeRepository.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Data/Repository/PaymentRepository.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Data/Repository/PaymentRepository.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Data/Repository/ScreenRepository.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Data/Repository/ScreenRepository.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Data/Repository/UserRepository.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Data/Repository/UserRepository.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Dto/AdOrderDto.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Dto/AdOrderDto.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/Interfaces/ICategoryRepository.cs" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Dto/CategoryDto.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Dto/CategoryDto.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Dto/IncomeDto.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Dto/IncomeDto.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Models/AdOrder.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Models/AdOrder.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Models/Category.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Models/Category.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Models/Income.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Models/Income.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Models/Payment.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Models/Payment.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Models/Screen.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Models/Screen.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Program.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/Debug/net6.0/ADvanced.dll" beforeDir="false" afterPath="$PROJECT_DIR$/bin/Debug/net6.0/ADvanced.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/Debug/net6.0/ADvanced.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/bin/Debug/net6.0/ADvanced.pdb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/obj/ADvanced.csproj.nuget.dgspec.json" beforeDir="false" afterPath="$PROJECT_DIR$/obj/ADvanced.csproj.nuget.dgspec.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/obj/Debug/net6.0/ADvanced.assets.cache" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/net6.0/ADvanced.assets.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/obj/Debug/net6.0/ADvanced.csproj.AssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/net6.0/ADvanced.csproj.AssemblyReference.cache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/obj/Debug/net6.0/ADvanced.csproj.CoreCompileInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/net6.0/ADvanced.csproj.CoreCompileInputs.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/obj/Debug/net6.0/ADvanced.csproj.FileListAbsolute.txt" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/net6.0/ADvanced.csproj.FileListAbsolute.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/obj/Debug/net6.0/ADvanced.dll" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/net6.0/ADvanced.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/obj/Debug/net6.0/ADvanced.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/net6.0/ADvanced.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/obj/Debug/net6.0/ref/ADvanced.dll" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/net6.0/ref/ADvanced.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/obj/Debug/net6.0/refint/ADvanced.dll" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/net6.0/refint/ADvanced.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/obj/project.assets.json" beforeDir="false" afterPath="$PROJECT_DIR$/obj/project.assets.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/obj/project.nuget.cache" beforeDir="false" afterPath="$PROJECT_DIR$/obj/project.nuget.cache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/obj/project.packagespec.json" beforeDir="false" afterPath="$PROJECT_DIR$/obj/project.packagespec.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/obj/rider.project.restore.info" beforeDir="false" afterPath="$PROJECT_DIR$/obj/rider.project.restore.info" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/obj/staticwebassets.pack.sentinel" beforeDir="false" afterPath="$PROJECT_DIR$/obj/staticwebassets.pack.sentinel" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -61,6 +48,7 @@
   </component>
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/obj/Debug/net6.0/.NETCoreApp,Version=v6.0.AssemblyAttributes.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/obj/Release/net6.0/.NETCoreApp,Version=v6.0.AssemblyAttributes.cs" root0="SKIP_HIGHLIGHTING" />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -145,7 +133,8 @@
       <workItem from="1689520377942" duration="1576000" />
       <workItem from="1689534810041" duration="1932000" />
       <workItem from="1689687701932" duration="7782000" />
-      <workItem from="1690042456396" duration="5258000" />
+      <workItem from="1690042456396" duration="8872000" />
+      <workItem from="1690216478594" duration="1953000" />
     </task>
     <task id="LOCAL-00001" summary="Init">
       <created>1689072940825</created>
@@ -210,7 +199,21 @@
       <option name="project" value="LOCAL" />
       <updated>1689270855464</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="Async CRUD">
+      <created>1690053453643</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1690053453643</updated>
+    </task>
+    <task id="LOCAL-00011" summary="Unvers files">
+      <created>1690053504284</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1690053504284</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -239,6 +242,8 @@
     <MESSAGE value="AllModelDto" />
     <MESSAGE value="All model repository" />
     <MESSAGE value="All conrollers" />
-    <option name="LAST_COMMIT_MESSAGE" value="All conrollers" />
+    <MESSAGE value="Async CRUD" />
+    <MESSAGE value="Unvers files" />
+    <option name="LAST_COMMIT_MESSAGE" value="Unvers files" />
   </component>
 </project>
