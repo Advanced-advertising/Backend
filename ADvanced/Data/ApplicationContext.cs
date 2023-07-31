@@ -18,8 +18,8 @@ public class ApplicationContext : DbContext
     
     public ApplicationContext(DbContextOptions<ApplicationContext> options) : base(options)
     {
-        //Database.EnsureDeleted();
-        Database.EnsureCreated();
+        Database.EnsureDeleted();
+        //Database.EnsureCreated();
     }
     protected override void OnModelCreating(ModelBuilder modelBuilder)
     {

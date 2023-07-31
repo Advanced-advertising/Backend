@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="DataSourceManagerImpl" format="xml" multifile-model="true">
-    <data-source source="LOCAL" name="advanceddb" uuid="3760e918-3280-47a6-8e36-482c76fb86a7">
+    <data-source source="LOCAL" name="advanceddb" uuid="f9411e32-ae1f-416d-9ad6-af9b472b8910">
       <driver-ref>sqlserver.localdb.jb</driver-ref>
       <synchronize>true</synchronize>
       <jdbc-driver>com.jetbrains.jdbc.sqlserver.SqlServerDriver</jdbc-driver>

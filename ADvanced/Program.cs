@@ -6,13 +6,20 @@ using ADvanced.Dto;
 using ADvanced.Models;
 using Microsoft.EntityFrameworkCore;
 using Serilog;
+using Microsoft.AspNetCore.Identity;
+using ADvanced.Areas.Identity.Data;
 
 var builder = WebApplication.CreateBuilder();
 string connection = "Server=(localdb)\\mssqllocaldb;Database=advanceddb;Trusted_Connection=True;";
+builder.Services.AddDbContext<ApplicationIdentityContext>(options => options.UseSqlServer(connection));
+builder.Services.AddDefaultIdentity<ApplicationUser>(options => options.SignIn.RequireConfirmedAccount = true)
+    .AddEntityFrameworkStores<ApplicationIdentityContext>();
+builder.Services.AddDbContext<ApplicationContext>(options => options.UseSqlServer(connection));
+
 builder.Services.AddControllers();
 builder.Services.AddControllers().AddJsonOptions(x =>
     x.JsonSerializerOptions.ReferenceHandler = ReferenceHandler.IgnoreCycles);
-builder.Services.AddDbContext<ApplicationContext>(options => options.UseSqlServer(connection));
+
 builder.Services.AddAutoMapper(AppDomain.CurrentDomain.GetAssemblies());
 builder.Services.AddScoped<IRepository<Category>, CategoryRepository>();
 builder.Services.AddScoped<IRepository<Income>, IncomeRepository>();
@@ -35,4 +42,4 @@ app.UseDefaultFiles();
 app.UseStaticFiles();
 app.MapControllers();
 app.MapGet("/", () => $"Hello World!");
-app.Run();
+app.UseAuthentication();app.Run();
