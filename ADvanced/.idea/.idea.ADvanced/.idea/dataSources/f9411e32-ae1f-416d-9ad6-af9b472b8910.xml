@@ -28,7 +28,7 @@
     <database id="2" parent="1" name="advanceddb">
       <Collation>SQL_Latin1_General_CP1_CI_AS</Collation>
       <Current>1</Current>
-      <Fingerprint>6.45128/09DCE29F-5383-4F88-A4B5-DB5805ACACA2@BUSITKA\LOCALDB#1374</Fingerprint>
+      <Fingerprint>6.45128/09DCE29F-5383-4F88-A4B5-DB5805ACACA2@BUSITKA\LOCALDB#D513</Fingerprint>
       <Grants>6|database||1|connect|G
 6|database||0|view any column encryption key definition|G
 6|database||0|view any column master key definition|G</Grants>
@@ -276,7 +276,7 @@
     </schema>
     <schema id="54" parent="2" name="dbo">
       <Current>1</Current>
-      <IntrospectionTimestamp>2023-07-31.16:00:31.347</IntrospectionTimestamp>
+      <IntrospectionTimestamp>2023-07-31.16:08:58.577</IntrospectionTimestamp>
       <ObjectId>1</ObjectId>
     </schema>
     <schema id="55" parent="2" name="guest">

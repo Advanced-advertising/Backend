@@ -8,6 +8,9 @@ using Microsoft.EntityFrameworkCore;
 using Serilog;
 using Microsoft.AspNetCore.Identity;
 using ADvanced.Areas.Identity.Data;
+using ADvanced.Core;
+using ADvanced.Core.Repositories;
+
 
 var builder = WebApplication.CreateBuilder();
 string connection = "Server=(localdb)\\mssqllocaldb;Database=advanceddb;Trusted_Connection=True;";
@@ -31,6 +34,9 @@ builder.Services.AddScoped<IRepository<BusinessWorkingTime>, BussinesWorkingTime
 builder.Services.AddScoped<IRepository<Payment>, PaymentRepository>();
 builder.Services.AddScoped<IRepository<Screen>, ScreenRepository>();
 builder.Services.AddScoped<IRepository<User>, UserRepository>();
+builder.Services.AddScoped<IUserRepository, UserIdenityRepository>();
+builder.Services.AddScoped<IRoleRepository, RoleRepository>();
+builder.Services.AddScoped<IUnitOfWork, UnitOfWork>();
 
 builder.Host.UseSerilog((context, configuration) =>
     configuration.ReadFrom.Configuration(context.Configuration));
@@ -42,4 +48,27 @@ app.UseDefaultFiles();
 app.UseStaticFiles();
 app.MapControllers();
 app.MapGet("/", () => $"Hello World!");
-app.UseAuthentication();app.Run();
+app.UseAuthentication();
+
+void AddScoped()
+{
+    builder.Services.AddScoped<IUserRepository, UserIdenityRepository>();
+    builder.Services.AddScoped<IRoleRepository, RoleRepository>();
+    builder.Services.AddScoped<IUnitOfWork, UnitOfWork>();
+}
+
+void AddAuthorizationPolicies()
+{
+    builder.Services.AddAuthorization(options =>
+    {
+        options.AddPolicy("EmployeeOnly", policy => policy.RequireClaim("EmployeeNumber"));
+    });
+
+    builder.Services.AddAuthorization(options =>
+    {
+        options.AddPolicy(Constants.Policies.RequireAdmin, policy => policy.RequireRole(Constants.Roles.Administrator));
+        options.AddPolicy(Constants.Policies.RequireManager, policy => policy.RequireRole(Constants.Roles.Manager));
+    });
+}
+
+app.Run();

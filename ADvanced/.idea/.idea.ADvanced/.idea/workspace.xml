@@ -5,42 +5,16 @@
     <projectFile profileName="IIS Express">ADvanced.csproj</projectFile>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="79b12a13-811b-450a-a4bc-cc9c2553ca19" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/Areas/Identity/Pages/_ViewStart.cshtml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.ADvanced/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.ADvanced/.idea/dataSources.local.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.ADvanced/.idea/dataSources.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.ADvanced/.idea/dataSources.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.ADvanced/.idea/dataSources/3760e918-3280-47a6-8e36-482c76fb86a7.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.ADvanced/.idea/dataSources/3760e918-3280-47a6-8e36-482c76fb86a7.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.ADvanced/.idea/dataSources/3760e918-3280-47a6-8e36-482c76fb86a7/storage_v2/_src_/database/advanceddb.IPTtKA/schema/dbo.sYMBAA.meta" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.ADvanced/.idea/dataSources/3760e918-3280-47a6-8e36-482c76fb86a7/storage_v2/_src_/database/advanceddb.IPTtKA/schema/dbo.sYMBAA.meta" afterDir="false" />
+    <list default="true" id="79b12a13-811b-450a-a4bc-cc9c2553ca19" name="Changes" comment="Unv files">
+      <change afterPath="$PROJECT_DIR$/Core/Constants.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Core/Repositories/IRoleRepository.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Core/Repositories/IUnitOfWork.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Core/Repositories/IUserRepository.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Data/Repository/IdentityRepository.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.ADvanced/.idea/dataSources/f9411e32-ae1f-416d-9ad6-af9b472b8910.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.ADvanced/.idea/dataSources/f9411e32-ae1f-416d-9ad6-af9b472b8910.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.ADvanced/.idea/dataSources/f9411e32-ae1f-416d-9ad6-af9b472b8910/storage_v2/_src_/database/advanceddb.IPTtKA/schema/dbo.sYMBAA.meta" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.ADvanced/.idea/dataSources/f9411e32-ae1f-416d-9ad6-af9b472b8910/storage_v2/_src_/database/advanceddb.IPTtKA/schema/dbo.sYMBAA.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.ADvanced/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.ADvanced/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ADvanced.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/ADvanced.csproj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Data/ApplicationContext.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Data/ApplicationContext.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Program.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/appsettings.json" beforeDir="false" afterPath="$PROJECT_DIR$/appsettings.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/Debug/net6.0/ADvanced.deps.json" beforeDir="false" afterPath="$PROJECT_DIR$/bin/Debug/net6.0/ADvanced.deps.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/Debug/net6.0/ADvanced.dll" beforeDir="false" afterPath="$PROJECT_DIR$/bin/Debug/net6.0/ADvanced.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/Debug/net6.0/ADvanced.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/bin/Debug/net6.0/ADvanced.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/Debug/net6.0/Microsoft.Bcl.AsyncInterfaces.dll" beforeDir="false" afterPath="$PROJECT_DIR$/bin/Debug/net6.0/Microsoft.Bcl.AsyncInterfaces.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/Debug/net6.0/appsettings.json" beforeDir="false" afterPath="$PROJECT_DIR$/bin/Debug/net6.0/appsettings.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/obj/ADvanced.csproj.nuget.dgspec.json" beforeDir="false" afterPath="$PROJECT_DIR$/obj/ADvanced.csproj.nuget.dgspec.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/obj/ADvanced.csproj.nuget.g.props" beforeDir="false" afterPath="$PROJECT_DIR$/obj/ADvanced.csproj.nuget.g.props" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/obj/ADvanced.csproj.nuget.g.targets" beforeDir="false" afterPath="$PROJECT_DIR$/obj/ADvanced.csproj.nuget.g.targets" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/obj/Debug/net6.0/ADvanced.AssemblyInfo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/net6.0/ADvanced.AssemblyInfo.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/obj/Debug/net6.0/ADvanced.AssemblyInfoInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/net6.0/ADvanced.AssemblyInfoInputs.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/obj/Debug/net6.0/ADvanced.GeneratedMSBuildEditorConfig.editorconfig" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/net6.0/ADvanced.GeneratedMSBuildEditorConfig.editorconfig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/obj/Debug/net6.0/ADvanced.assets.cache" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/net6.0/ADvanced.assets.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/obj/Debug/net6.0/ADvanced.csproj.AssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/net6.0/ADvanced.csproj.AssemblyReference.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/obj/Debug/net6.0/ADvanced.csproj.CoreCompileInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/net6.0/ADvanced.csproj.CoreCompileInputs.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/obj/Debug/net6.0/ADvanced.csproj.FileListAbsolute.txt" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/net6.0/ADvanced.csproj.FileListAbsolute.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/obj/Debug/net6.0/ADvanced.dll" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/net6.0/ADvanced.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/obj/Debug/net6.0/ADvanced.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/net6.0/ADvanced.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/obj/Debug/net6.0/ref/ADvanced.dll" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/net6.0/ref/ADvanced.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/obj/Debug/net6.0/refint/ADvanced.dll" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/net6.0/refint/ADvanced.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/obj/Debug/net6.0/staticwebassets.build.json" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/net6.0/staticwebassets.build.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/obj/project.assets.json" beforeDir="false" afterPath="$PROJECT_DIR$/obj/project.assets.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/obj/project.nuget.cache" beforeDir="false" afterPath="$PROJECT_DIR$/obj/project.nuget.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/obj/project.packagespec.json" beforeDir="false" afterPath="$PROJECT_DIR$/obj/project.packagespec.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/obj/rider.project.restore.info" beforeDir="false" afterPath="$PROJECT_DIR$/obj/rider.project.restore.info" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/obj/staticwebassets.pack.sentinel" beforeDir="false" afterPath="$PROJECT_DIR$/obj/staticwebassets.pack.sentinel" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -61,6 +35,7 @@
     </option>
   </component>
   <component name="HighlightingSettingsPerFile">
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/93bf8ca51564b3532dce6442f8ec6d3856e11622b484427b6e965ca60aba4b1/IdentityDbContext.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/obj/Debug/net6.0/.NETCoreApp,Version=v6.0.AssemblyAttributes.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/obj/Release/net6.0/.NETCoreApp,Version=v6.0.AssemblyAttributes.cs" root0="SKIP_HIGHLIGHTING" />
   </component>
@@ -151,7 +126,7 @@
       <workItem from="1690216478594" duration="1953000" />
       <workItem from="1690644975741" duration="943000" />
       <workItem from="1690646250484" duration="1927000" />
-      <workItem from="1690792734659" duration="3080000" />
+      <workItem from="1690792734659" duration="5108000" />
     </task>
     <task id="LOCAL-00001" summary="Init">
       <created>1689072940825</created>
@@ -237,7 +212,21 @@
       <option name="project" value="LOCAL" />
       <updated>1690645004808</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="Add identity">
+      <created>1690797691954</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1690797691954</updated>
+    </task>
+    <task id="LOCAL-00014" summary="Unv files">
+      <created>1690797786522</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1690797786522</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -269,6 +258,8 @@
     <MESSAGE value="Async CRUD" />
     <MESSAGE value="Unvers files" />
     <MESSAGE value="CRUD Update" />
-    <option name="LAST_COMMIT_MESSAGE" value="CRUD Update" />
+    <MESSAGE value="Add identity" />
+    <MESSAGE value="Unv files" />
+    <option name="LAST_COMMIT_MESSAGE" value="Unv files" />
   </component>
 </project>
