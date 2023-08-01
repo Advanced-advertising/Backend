@@ -84,3 +84,16 @@ D:\Something\гадости\это гадость\ADvanced\ADvanced\obj\Debug\ne
 D:\Something\гадости\это гадость\ADvanced\ADvanced\obj\Debug\net6.0\ADvanced.pdb
 D:\Something\гадости\это гадость\ADvanced\ADvanced\obj\Debug\net6.0\ADvanced.genruntimeconfig.cache
 D:\Something\гадости\это гадость\ADvanced\ADvanced\obj\Debug\net6.0\ref\ADvanced.dll
+D:\Something\гадости\это гадость\ADvanced\ADvanced\bin\Debug\net6.0\Microsoft.Extensions.Configuration.Binder.dll
+D:\Something\гадости\это гадость\ADvanced\ADvanced\bin\Debug\net6.0\Microsoft.Extensions.FileProviders.Abstractions.dll
+D:\Something\гадости\это гадость\ADvanced\ADvanced\bin\Debug\net6.0\Microsoft.Extensions.Hosting.Abstractions.dll
+D:\Something\гадости\это гадость\ADvanced\ADvanced\bin\Debug\net6.0\Serilog.dll
+D:\Something\гадости\это гадость\ADvanced\ADvanced\bin\Debug\net6.0\Serilog.AspNetCore.dll
+D:\Something\гадости\это гадость\ADvanced\ADvanced\bin\Debug\net6.0\Serilog.Extensions.Hosting.dll
+D:\Something\гадости\это гадость\ADvanced\ADvanced\bin\Debug\net6.0\Serilog.Extensions.Logging.dll
+D:\Something\гадости\это гадость\ADvanced\ADvanced\bin\Debug\net6.0\Serilog.Formatting.Compact.dll
+D:\Something\гадости\это гадость\ADvanced\ADvanced\bin\Debug\net6.0\Serilog.Settings.Configuration.dll
+D:\Something\гадости\это гадость\ADvanced\ADvanced\bin\Debug\net6.0\Serilog.Sinks.Console.dll
+D:\Something\гадости\это гадость\ADvanced\ADvanced\bin\Debug\net6.0\Serilog.Sinks.Debug.dll
+D:\Something\гадости\это гадость\ADvanced\ADvanced\bin\Debug\net6.0\Serilog.Sinks.File.dll
+D:\Something\гадости\это гадость\ADvanced\ADvanced\bin\Debug\net6.0\dotnet-ef.dll

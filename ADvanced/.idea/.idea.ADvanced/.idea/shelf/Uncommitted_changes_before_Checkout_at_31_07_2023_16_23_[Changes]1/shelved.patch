@@ -1,0 +1,213 @@
+Index: .idea/.idea.ADvanced/.idea/dataSources/3760e918-3280-47a6-8e36-482c76fb86a7.xml
+===================================================================
+diff --git a/.idea/.idea.ADvanced/.idea/dataSources/3760e918-3280-47a6-8e36-482c76fb86a7.xml b/.idea/.idea.ADvanced/.idea/dataSources/3760e918-3280-47a6-8e36-482c76fb86a7.xml
+deleted file mode 100644
+--- a/.idea/.idea.ADvanced/.idea/dataSources/3760e918-3280-47a6-8e36-482c76fb86a7.xml	
++++ /dev/null	
+@@ -1,169 +0,0 @@
+-<?xml version="1.0" encoding="UTF-8"?>
+-<dataSource name="advanceddb">
+-  <database-model serializer="dbm" dbms="MSSQL_LOCALDB" family-id="MSSQL_LOCALDB" format-version="4.39">
+-    <root id="1">
+-      <Dbms>MSSQL_LOCALDB</Dbms>
+-      <Grants>2|||2|connect|G
+-3|||2|connect|G
+-4|||2|connect|G
+-5|||2|connect|G
+-0|root||102|authenticate server|G
+-0|root||103|authenticate server|G
+-0|root||1|connect sql|G
+-0|root||256|connect sql|G
+-0|root||257|connect sql|G
+-0|root||258|connect sql|G
+-0|root||105|control server|G
+-0|root||2|view any database|G
+-0|root||101|view any definition|G
+-0|root||102|view any definition|G
+-0|root||105|view any definition|G
+-0|root||106|view any definition|G
+-0|root||257|view any definition|G
+-0|root||102|view server state|G
+-0|root||257|view server state|G</Grants>
+-      <PermissionsCheckSum>25719000802</PermissionsCheckSum>
+-      <ServerVersion>15.0.4153</ServerVersion>
+-    </root>
+-    <database id="2" parent="1" name="advanceddb">
+-      <Collation>SQL_Latin1_General_CP1_CI_AS</Collation>
+-      <Current>1</Current>
+-      <Fingerprint>6.45128/09DCE29F-5383-4F88-A4B5-DB5805ACACA2@BUSITKA\LOCALDB#AD38</Fingerprint>
+-      <Grants>6|database||1|connect|G
+-6|database||0|view any column encryption key definition|G
+-6|database||0|view any column master key definition|G</Grants>
+-      <ObjectId>6</ObjectId>
+-      <PermissionsCheckSum>3196235284</PermissionsCheckSum>
+-    </database>
+-    <database id="3" parent="1" name="applicationdb">
+-      <ObjectId>5</ObjectId>
+-    </database>
+-    <database id="4" parent="1" name="identitydb">
+-      <ObjectId>7</ObjectId>
+-    </database>
+-    <database id="5" parent="1" name="identitytestdb">
+-      <ObjectId>8</ObjectId>
+-    </database>
+-    <database id="6" parent="1" name="master">
+-      <Collation>SQL_Latin1_General_CP1_CI_AS</Collation>
+-      <ObjectId>1</ObjectId>
+-    </database>
+-    <database id="7" parent="1" name="model">
+-      <Collation>SQL_Latin1_General_CP1_CI_AS</Collation>
+-      <ObjectId>3</ObjectId>
+-    </database>
+-    <database id="8" parent="1" name="msdb">
+-      <Collation>SQL_Latin1_General_CP1_CI_AS</Collation>
+-      <ObjectId>4</ObjectId>
+-    </database>
+-    <database id="9" parent="1" name="tempdb">
+-      <Collation>SQL_Latin1_General_CP1_CI_AS</Collation>
+-      <ObjectId>2</ObjectId>
+-    </database>
+-    <login id="10" parent="1" name="sa">
+-      <DefaultDatabase>master</DefaultDatabase>
+-      <ObjectId>1</ObjectId>
+-    </login>
+-    <login id="11" parent="1" name="public">
+-      <Enabled>1</Enabled>
+-      <ObjectId>2</ObjectId>
+-      <Type>server-role</Type>
+-    </login>
+-    <login id="12" parent="1" name="sysadmin">
+-      <Enabled>1</Enabled>
+-      <ObjectId>3</ObjectId>
+-      <Type>server-role</Type>
+-    </login>
+-    <login id="13" parent="1" name="securityadmin">
+-      <Enabled>1</Enabled>
+-      <ObjectId>4</ObjectId>
+-      <Type>server-role</Type>
+-    </login>
+-    <login id="14" parent="1" name="serveradmin">
+-      <Enabled>1</Enabled>
+-      <ObjectId>5</ObjectId>
+-      <Type>server-role</Type>
+-    </login>
+-    <login id="15" parent="1" name="setupadmin">
+-      <Enabled>1</Enabled>
+-      <ObjectId>6</ObjectId>
+-      <Type>server-role</Type>
+-    </login>
+-    <login id="16" parent="1" name="processadmin">
+-      <Enabled>1</Enabled>
+-      <ObjectId>7</ObjectId>
+-      <Type>server-role</Type>
+-    </login>
+-    <login id="17" parent="1" name="diskadmin">
+-      <Enabled>1</Enabled>
+-      <ObjectId>8</ObjectId>
+-      <Type>server-role</Type>
+-    </login>
+-    <login id="18" parent="1" name="dbcreator">
+-      <Enabled>1</Enabled>
+-      <ObjectId>9</ObjectId>
+-      <Type>server-role</Type>
+-    </login>
+-    <login id="19" parent="1" name="bulkadmin">
+-      <Enabled>1</Enabled>
+-      <ObjectId>10</ObjectId>
+-      <Type>server-role</Type>
+-    </login>
+-    <login id="20" parent="1" name="##MS_SQLResourceSigningCertificate##">
+-      <DefaultDatabase>master</DefaultDatabase>
+-      <Enabled>1</Enabled>
+-      <ObjectId>101</ObjectId>
+-      <Type>certificate-mapped-login</Type>
+-    </login>
+-    <login id="21" parent="1" name="##MS_SQLReplicationSigningCertificate##">
+-      <DefaultDatabase>master</DefaultDatabase>
+-      <Enabled>1</Enabled>
+-      <ObjectId>102</ObjectId>
+-      <Type>certificate-mapped-login</Type>
+-    </login>
+-    <login id="22" parent="1" name="##MS_SQLAuthenticatorCertificate##">
+-      <DefaultDatabase>master</DefaultDatabase>
+-      <Enabled>1</Enabled>
+-      <ObjectId>103</ObjectId>
+-      <Type>certificate-mapped-login</Type>
+-    </login>
+-    <login id="23" parent="1" name="##MS_PolicySigningCertificate##">
+-      <DefaultDatabase>master</DefaultDatabase>
+-      <Enabled>1</Enabled>
+-      <ObjectId>105</ObjectId>
+-      <Type>certificate-mapped-login</Type>
+-    </login>
+-    <login id="24" parent="1" name="##MS_SmoExtendedSigningCertificate##">
+-      <DefaultDatabase>master</DefaultDatabase>
+-      <Enabled>1</Enabled>
+-      <ObjectId>106</ObjectId>
+-      <Type>certificate-mapped-login</Type>
+-    </login>
+-    <login id="25" parent="1" name="##MS_PolicyEventProcessingLogin##">
+-      <DefaultDatabase>master</DefaultDatabase>
+-      <ObjectId>256</ObjectId>
+-    </login>
+-    <login id="26" parent="1" name="##MS_PolicyTsqlExecutionLogin##">
+-      <DefaultDatabase>master</DefaultDatabase>
+-      <ObjectId>257</ObjectId>
+-    </login>
+-    <login id="27" parent="1" name="##MS_AgentSigningCertificate##">
+-      <DefaultDatabase>master</DefaultDatabase>
+-      <Enabled>1</Enabled>
+-      <ObjectId>258</ObjectId>
+-      <Type>certificate-mapped-login</Type>
+-    </login>
+-    <login id="28" parent="1" name="BUSITKA\АЛИНА">
+-      <DefaultDatabase>master</DefaultDatabase>
+-      <Enabled>1</Enabled>
+-      <ObjectId>259</ObjectId>
+-      <Type>windows-login</Type>
+-    </login>
+-    <login id="29" parent="1" name="NT SERVICE\SQLWriter">
+-      <DefaultDatabase>master</DefaultDatabase>
+-      <Enabled>1</Enabled>
+-      <ObjectId>260</ObjectId>
+-      <Type>windows-login</Type>
+-    </login>
+-  </database-model>
+-</dataSource>
+\ No newline at end of file
+Index: .idea/.idea.ADvanced/.idea/dataSources/3760e918-3280-47a6-8e36-482c76fb86a7/storage_v2/_src_/database/advanceddb.IPTtKA/schema/dbo.sYMBAA.meta
+===================================================================
+diff --git a/.idea/.idea.ADvanced/.idea/dataSources/3760e918-3280-47a6-8e36-482c76fb86a7/storage_v2/_src_/database/advanceddb.IPTtKA/schema/dbo.sYMBAA.meta b/.idea/.idea.ADvanced/.idea/dataSources/3760e918-3280-47a6-8e36-482c76fb86a7/storage_v2/_src_/database/advanceddb.IPTtKA/schema/dbo.sYMBAA.meta
+deleted file mode 100644
+--- a/.idea/.idea.ADvanced/.idea/dataSources/3760e918-3280-47a6-8e36-482c76fb86a7/storage_v2/_src_/database/advanceddb.IPTtKA/schema/dbo.sYMBAA.meta	
++++ /dev/null	
+@@ -1,2 +0,0 @@
+-#n:dbo
+-!<md> [1690807660790, 0, null, null, -2147483648, -2147483648]
+Index: .idea/.idea.ADvanced/.idea/dataSources/3760e918-3280-47a6-8e36-482c76fb86a7/storage_v2/_src_/database/advanceddb.IPTtKA.meta
+===================================================================
+diff --git a/.idea/.idea.ADvanced/.idea/dataSources/3760e918-3280-47a6-8e36-482c76fb86a7/storage_v2/_src_/database/advanceddb.IPTtKA.meta b/.idea/.idea.ADvanced/.idea/dataSources/3760e918-3280-47a6-8e36-482c76fb86a7/storage_v2/_src_/database/advanceddb.IPTtKA.meta
+deleted file mode 100644
+--- a/.idea/.idea.ADvanced/.idea/dataSources/3760e918-3280-47a6-8e36-482c76fb86a7/storage_v2/_src_/database/advanceddb.IPTtKA.meta	
++++ /dev/null	
+@@ -1,1 +0,0 @@
+-#n:advanceddb
+\ No newline at end of file
+Index: .idea/.idea.ADvanced/.idea/dataSources/3760e918-3280-47a6-8e36-482c76fb86a7/storage_v2/_src_/database/advanceddb.IPTtKA/schema/INFORMATION_SCHEMA.NBgcMw.meta
+===================================================================
+diff --git a/.idea/.idea.ADvanced/.idea/dataSources/3760e918-3280-47a6-8e36-482c76fb86a7/storage_v2/_src_/database/advanceddb.IPTtKA/schema/INFORMATION_SCHEMA.NBgcMw.meta b/.idea/.idea.ADvanced/.idea/dataSources/3760e918-3280-47a6-8e36-482c76fb86a7/storage_v2/_src_/database/advanceddb.IPTtKA/schema/INFORMATION_SCHEMA.NBgcMw.meta
+deleted file mode 100644
+--- a/.idea/.idea.ADvanced/.idea/dataSources/3760e918-3280-47a6-8e36-482c76fb86a7/storage_v2/_src_/database/advanceddb.IPTtKA/schema/INFORMATION_SCHEMA.NBgcMw.meta	
++++ /dev/null	
+@@ -1,2 +0,0 @@
+-#n:INFORMATION_SCHEMA
+-!<md> [null, 0, null, null, -2147483648, -2147483648]
+Index: .idea/.idea.ADvanced/.idea/dataSources/3760e918-3280-47a6-8e36-482c76fb86a7/storage_v2/_src_/database/advanceddb.IPTtKA/schema/sys.zb4BAA.meta
+===================================================================
+diff --git a/.idea/.idea.ADvanced/.idea/dataSources/3760e918-3280-47a6-8e36-482c76fb86a7/storage_v2/_src_/database/advanceddb.IPTtKA/schema/sys.zb4BAA.meta b/.idea/.idea.ADvanced/.idea/dataSources/3760e918-3280-47a6-8e36-482c76fb86a7/storage_v2/_src_/database/advanceddb.IPTtKA/schema/sys.zb4BAA.meta
+deleted file mode 100644
+--- a/.idea/.idea.ADvanced/.idea/dataSources/3760e918-3280-47a6-8e36-482c76fb86a7/storage_v2/_src_/database/advanceddb.IPTtKA/schema/sys.zb4BAA.meta	
++++ /dev/null	
+@@ -1,2 +0,0 @@
+-#n:sys
+-!<md> [null, 0, null, null, -2147483648, -2147483648]
